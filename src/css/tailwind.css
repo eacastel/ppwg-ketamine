@@ -1,0 +1,25 @@
+@tailwind base;
+
+a {
+  @apply text-primary-darker;
+}
+a:hover {
+  @apply text-primary;
+}
+.lp-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%);
+  z-index: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+@tailwind components;
+
+@tailwind utilities;
