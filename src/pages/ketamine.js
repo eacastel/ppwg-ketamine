@@ -34,8 +34,9 @@ const Inside = () => {
             <div className="hidden lg:block lg:col-span-1"></div>
           </div>
         </div>
-        <StaticImage src="../images/hero-banner-mobile.png" alt="happy smiling 30 year old attractive brunette in a thick cotton sweater" className="md:hidden w-full object-cover z-10"  />
-  
+        <div className="md:hidden">
+        <StaticImage src="../images/hero-banner-mobile.png" alt="happy smiling 30 year old attractive brunette in a thick cotton sweater" className="w-full object-cover z-10 md:hidden"  />
+        </div>
       </section>
       <div className="bg-blue-600 w-full h-2"></div>
 
