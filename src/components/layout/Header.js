@@ -28,7 +28,7 @@ const Header = () => (
 
       </div>
       <div className="hidden md:block">
-        <ButtonKetamine size="lg">Am I a Candidate?</ButtonKetamine>
+        <Button size="lg">Am I a Candidate?</Button>
       </div>
     </div>
   </header>
