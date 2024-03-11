@@ -89,7 +89,7 @@ const Inside = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Process Step 1 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
-              <div className="text-purple-500 font-poppins text-6xl">01</div>
+              <div className="text-indigo-500 font-poppins text-6xl">01</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Take the Assessment</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
               Begin your path to wellness with a brief assessment to understand if Ketamine therapy suits your needs."
@@ -98,7 +98,7 @@ const Inside = () => {
 
             {/* Process Step 2 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
-              <div className="text-purple-500 font-poppins text-6xl">02</div>
+              <div className="text-indigo-500 font-poppins text-6xl">02</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Explore your options</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
                 If qualified, you can <a href="/resources/ketamine-cost" className="text-blue-600 hover:text-blue-800">select a treatment path</a> or <a href="#schedule" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> by filling out the consultation information form.
@@ -107,7 +107,7 @@ const Inside = () => {
 
             {/* Process Step 3 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
-              <div className="text-purple-500 font-poppins text-6xl">03</div>
+              <div className="text-indigo-500 font-poppins text-6xl">03</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Start feeling better</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
               Our clinicians and doctors will guide you through an integrative approach to support your healing journey.
