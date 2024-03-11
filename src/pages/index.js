@@ -145,16 +145,16 @@ const Inside = () => {
             {/* Testimonial 2 */}
             <div className="space-y-4">
             <div className="flex justify-center">
-            <StaticImage src="../images/testimonial-john.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
+            <StaticImage src="../images/testimonial-alice.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
               <p className="text-center text-gray-600">“This is a very respectable and professional place the staff is is nice and welcoming, I keep coming back because they make me feel comfortable with myself.”</p>
-              <p className="text-center font-semibold">Ramiro C.</p>
+              <p className="text-center font-semibold">Alice C.</p>
               <p className="text-center text-sm text-gray-500">Pacific Pain & Wellness Client</p>
             </div>
             {/* Testimonial 3 */}
             <div className="space-y-4">
             <div className="flex justify-center">
-            <StaticImage src="../images/testimonial-david.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
+            <StaticImage src="../images/testimonial-john.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
               <p className="text-center text-gray-600">“I loved my experience here. I came here with chronic pain & depression & received TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments Every day (xcept weekends) for many weeks. I looked forward to each visit as I continued to feel the Positive effects of the treatments I receeived. ”</p>
               <p className="text-center font-semibold">Joshua B.</p>
@@ -179,7 +179,7 @@ const Inside = () => {
             </div>
 
           </div>
-          <StaticImage src="../images/change-your-life-today.png" alt="Pacific Pain & Wellness Group Logo" className="w-full md:w-1/2 h-auto" />
+          <StaticImage src="../images/change-your-life-today-v3.png" alt="Pacific Pain & Wellness Group Logo" className="w-full md:w-1/2 h-auto" />
         </div>
       </section>
 

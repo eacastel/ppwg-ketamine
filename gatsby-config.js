@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Mental Health & Pain Management Solutions`,
+    title: `Ketamine Infusion Therapy in South Bay Los Angeles`,
     description: `Find relief with our
     personalized and innovative treatments`,
     twitterUsername: `@PacificPainGrp`,
