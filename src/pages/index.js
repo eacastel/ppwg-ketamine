@@ -100,8 +100,11 @@ const Inside = () => {
             <div className="bg-white shadow-lg rounded-xl p-8">
               <div className="text-purple-500 font-poppins text-6xl">02</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Explore your options</h3>
-              <p className="font-normal text-lg leading-relaxed text-gray-700">
+             {/* } <p className="font-normal text-lg leading-relaxed text-gray-700">
                 If qualified, you can <a href="/resources/ketamine-cost" className="text-blue-600 hover:text-blue-800">select a treatment path</a> or <a href="#schedule" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> by filling out the consultation information form.
+  </p> */}
+                <p className="font-normal text-lg leading-relaxed text-gray-700">
+                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> by filling out the consultation information form.
               </p>
             </div>
 
