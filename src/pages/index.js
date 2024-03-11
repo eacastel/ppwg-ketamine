@@ -23,7 +23,7 @@ const Inside = () => {
                 </p>
                 <div className="my-6 border-b border-gray-200 w-full"></div>
                 <div className="text-base leading-8 text-gray-800">
-                  Affordable treatments as low as<br /><span className="font-semibold text-2xl">$125 per session</span><br />
+                  Affordable treatments as low as<br /><span className="font-semibold text-2xl">$650 per session</span><br />
                   <span className=' text-sm leading-none'>Health insurance is not accepted at this time.</span>
                 </div>
                 <div className="inline-block pt-4 mt-6 py-6 ">

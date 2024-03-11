@@ -25,7 +25,7 @@ const ButtonKetamine = ({ children, className = '', size, variant = 'primary' })
     px-8
   `;
 
-  const href = "https://secure.emerchantgateway.com/pay/4nkt6v4f7gnr07xy8/wsChATc9?dl=0";
+  const href = "https://pacificpaingroup.com/form/ketamine-assessment";
 
   return (
     <a
