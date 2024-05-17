@@ -47,8 +47,8 @@ const Inside = () => {
         <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Headline Centered */}
           <div className="text-center mb-10">
-            <div className="text-xl font-normal mb-4 text-gray-600">A Holistic Approach to Mental Wellness</div>
-            <h2 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">Rediscover Yourself</h2>
+            <div className="text-xl font-normal mb-4 text-gray-600">Experience the Difference in Comprehensive Care</div>
+            <h2 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">Choose Pacific Pain & Wellness for Ketamine</h2>
           </div>
 
           {/* Grid layout for video and text content for md and lg screens */}
@@ -61,13 +61,13 @@ const Inside = () => {
             {/* Text Content */}
             <div className="space-y-5">
               <p className="text-xl text-bold text-gray-700">
-              Discover the transformative power of ketamine therapy for chronic pain and mental health relief at Pacific Pain & Wellness Group.
+              Choosing Pacific Pain & Wellness Group (PPWG) for ketamine infusion therapy ensures unparalleled safety, supervision, and comprehensive care. At PPWG, ketamine infusions are administered by experienced, board-certified doctors specializing in pain management and mental health.
               </p>
               <p className="text-base text-gray-600">
-              At Pacific Pain & Wellness Group, ketamine infusions emerge as a beacon of hope for individuals grappling with chronic pain and stubborn mental health conditions. By integrating ketamine therapy into a comprehensive treatment plan, we aim to unlock new possibilities for healing and improvement, especially for those who have found little relief in traditional treatments.
+              The clinic’s integrative approach blends cutting-edge treatments with traditional therapies, offering a holistic solution for both mind and body. This model aims to significantly and lastingly improve mental health and pain levels. Additionally, our state-of-the-art facility in Torrance, CA, provides a supportive and comfortable environment, enhancing the treatment experience.
               </p>
               <p className="text-base text-gray-600">
-              Our patient-centric approach ensures each treatment plan is as unique as the individuals we serve, promising not just symptomatic relief but a journey towards lasting wellness. Ketamine therapy, with its rapid effectiveness, stands out as a key component in our holistic strategy to combat pain, depression, anxiety, and PTSD, guiding our patients towards a brighter, more hopeful future.
+              PPWG’s multidisciplinary team of healthcare professionals offers personalized and professional care, crucial for effectively managing complex conditions. This structured, medically supervised treatment plan reduces risks associated with unsupervised ketamine use, maximizing therapeutic benefits.
               </p>
             </div>
           </div>
