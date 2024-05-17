@@ -17,7 +17,7 @@ const Inside = () => {
             <div className="md:col-span-5 text-left">
               <div className="mt-8">
                 <div className="text-lg leading-6 font-semibold uppercase tracking-wide text-gray-700 py-4">Transform Your Life</div>
-                <h1 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">Safe & Effective<br />Ketamine Therapy</h1>
+                <h1 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">Safe In-Clinic<br />Ketamine Therapy</h1>
                 <p className="text-lg leading-8 text-gray-800 max-w-prose">
                   Is traditional care not getting the results you’re looking for? It’s time to try something new: Holistic, evidence-based programs, including <strong>ketamine therapy</strong> and integration, to help you achieve personal and clinical breakthroughs.
                 </p>
@@ -82,7 +82,7 @@ const Inside = () => {
             <div className="text-xl font-normal mb-4 text-gray-600">The Process</div>
             <h2 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">You deserve to feel better.</h2>
             <p className="font-normal text-xl leading-relaxed text-gray-700">
-            Pioneering mental health and pain management with expertly supervised ketamine infusion therapy, ensuring personalized and effective care.
+            Pioneering mental health and pain management with expertly supervised ketamine infusion therapy, ensuring personalized and effective long-term care.
             </p>
           </div>
 
@@ -104,7 +104,7 @@ const Inside = () => {
                 If qualified, you can <a href="/resources/ketamine-cost" className="text-blue-600 hover:text-blue-800">select a treatment path</a> or <a href="#schedule" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> by filling out the consultation information form.
   </p> */}
                 <p className="font-normal text-lg leading-relaxed text-gray-700">
-                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> by filling out the consultation information form.
+                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> with one of our healthcare professionals at our state-of-the-art facility by filling out the consultation information form.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ const Inside = () => {
               <div className="text-purple-500 font-poppins text-6xl">03</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Start feeling better</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
-              Our clinicians and doctors will guide you through an integrative approach to support your healing journey.
+              Our clinicians and doctors will guide you through an integrative, medically supervised treatment plan that reduces the risks associated with unsupervised ketamine use, supporting your healing journey.
               </p>
             </div>
           </div>
@@ -175,7 +175,7 @@ const Inside = () => {
         <div className="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-8 md:mb-0 md:mr-8">
             <h2 className="text-4xl font-bold text-white mb-4">Transform Your Tomorrow Today.</h2>
-            <p className="text-lg text-white mb-6"> Discover how personalized ketamine therapy can unlock a future of well-being and endless potential.</p>
+            <p className="text-lg text-white mb-6"> Discover how personalized, in-clinic ketamine therapy, administered by caring and experienced professionals, can unlock a future of well-being and endless potential.</p>
             
             <div className="inline-block pt-4 mt-6 py-6 ">
             <ButtonKetamine size="lg" variant="secondary">Take the Assessment</ButtonKetamine>
