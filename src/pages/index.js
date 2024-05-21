@@ -19,11 +19,11 @@ const Inside = () => {
                 <div className="text-lg leading-6 font-semibold uppercase tracking-wide text-gray-700 py-4">Transform Your Life</div>
                 <h1 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">Safe In-Clinic<br />Ketamine Therapy</h1>
                 <p className="text-lg leading-8 text-gray-800 max-w-prose">
-                  Is traditional care not getting the results you’re looking for? It’s time to try something new: Holistic, evidence-based programs, including <strong>ketamine therapy</strong> and integration, to help you achieve personal and clinical breakthroughs.
+                  Is traditional care not getting the results you’re looking for? It’s time to try something new: holistic, evidence-based programs, including supervised <strong>ketamine therapy</strong> and integration to help you achieve personal and clinical breakthroughs.
                 </p>
                 <div className="my-6 border-b border-gray-200 w-full"></div>
                 <div className="text-base leading-8 text-gray-800">
-                  Affordable treatments as low as<br /><span className="font-semibold text-2xl">$650 per session</span><br />
+                  Affordable ketamine treatments as low as<br /><span className="font-semibold text-2xl">$650 per session</span><br />
                   <span className=' text-sm leading-none'>Health insurance is not accepted at this time.</span>
                 </div>
                 <div className="inline-block pt-4 mt-6 py-6 ">
