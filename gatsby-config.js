@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Ketamine Infusion Therapy in South Bay Los Angeles`,
-    description: `Find relief with our personalized and innovative treatments`,
+    title: `Ketamine Infusion Therapy Clinic in Torrance, CA and South Bay Los Angeles`,
+    description: `Find relief with our personalized and innovative ketamine infusion treatments`,
     twitterUsername: `@PacificPainGrp`,
     image: `src/images/ketamine-infusions-pacific-pain-and-wellness.png`,
     siteUrl: `https://ketamine.pacificpaingroup.com`,
@@ -31,8 +31,29 @@ module.exports = {
         lang: `eng`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
-        display: `standalone`,
-        icon: `src/images/favicon-16x16.png`,
+        display: `browser`,
+        icons: [
+          {
+            src: `src/images/favicon-16x16.png`,
+            sizes: `16x16`,
+            type: `image/png`,
+          },
+          {
+            src: `src/images/favicon-32x32.png`,
+            sizes: `32x32`,
+            type: `image/png`,
+          },
+          {
+            src: `src/images/icon-144x144.png`,
+            sizes: `144x144`,
+            type: `image/png`,
+          },
+          {
+            src: `src/images/icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     {
@@ -49,5 +70,6 @@ module.exports = {
         },
       },
     },
+    
   ],
 };

@@ -35,7 +35,7 @@ const Inside = () => {
           </div>
         </div>
         <div className="md:hidden">
-        <StaticImage src="../images/hero-banner-mobile.png" alt="happy smiling 30 year old attractive brunette in a thick cotton sweater" className="w-full object-cover z-10 md:hidden"  />
+        <StaticImage src="../images/hero-banner-mobile.png" alt="happy smiling 30 year old attractive brunette relaxing at home after ketamine infusions" className="w-full object-cover z-10 md:hidden"  />
         </div>
       </section>
       <div className="bg-blue-600 w-full h-2"></div>
@@ -135,7 +135,7 @@ const Inside = () => {
             {/* Testimonial 1 */}
             <div className="space-y-4">
             <div className="flex justify-center">
-            <StaticImage src="../images/testimonial-beth.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
+            <StaticImage src="../images/testimonial-beth.jpg" alt="Kery's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
               <p className="text-center text-gray-600">“Everyone was helpful and attentive, from the front desk staff, to the nurse and the PA. The appt ran on time. My issue was addressed and I was scheduled for my procedure the very next week. Office is clean and comfortable. I would highly recommend the services of Pacific Pain & Wellness”</p>
               <p className="text-center font-semibold">Kery W.</p>
@@ -144,7 +144,7 @@ const Inside = () => {
             {/* Testimonial 2 */}
             <div className="space-y-4">
             <div className="flex justify-center">
-            <StaticImage src="../images/testimonial-alice.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
+            <StaticImage src="../images/testimonial-alice.jpg" alt="Alice's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
               <p className="text-center text-gray-600">“This is a very respectable and professional place the staff is is nice and welcoming, I keep coming back because they make me feel comfortable with myself.”</p>
               <p className="text-center font-semibold">Alice C.</p>
@@ -153,7 +153,7 @@ const Inside = () => {
             {/* Testimonial 3 */}
             <div className="space-y-4">
             <div className="flex justify-center">
-            <StaticImage src="../images/testimonial-john.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
+            <StaticImage src="../images/testimonial-john.jpg" alt="Joshua's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
               <p className="text-center text-gray-600">“I loved my experience here. I came here with chronic pain & depression & received TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments Every day (xcept weekends) for many weeks. I looked forward to each visit as I continued to feel the Positive effects of the treatments I receeived. ”</p>
               <p className="text-center font-semibold">Joshua B.</p>
@@ -178,7 +178,7 @@ const Inside = () => {
             </div>
 
           </div>
-          <StaticImage src="../images/change-your-life-today-v3.png" alt="Pacific Pain & Wellness Group Logo" className="w-full md:w-1/2 h-auto" />
+          <StaticImage src="../images/change-your-life-today-v3.png" alt="Collage of 3 people smiling" className="w-full md:w-1/2 h-auto" />
         </div>
       </section>
 

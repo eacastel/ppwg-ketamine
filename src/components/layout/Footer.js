@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Footer = () => {
   const handlePhoneClick = () => {
     if (typeof window !== "undefined" && window.gtag) {
