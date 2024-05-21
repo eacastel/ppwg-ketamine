@@ -21,13 +21,13 @@ const Footer = () => {
           <h2 className="text-lg font-semibold">Important Links</h2>
           <ul className="mt-4 leading-loose">
             <li>
-              <a href="https://pacificpaingroup.com/">Pacific Pain & Wellness Group</a>
+              <a href="https://pacificpaingroup.com/" target="_blank">Pacific Pain & Wellness Group</a>
             </li>
             <li>
-              <a href="https://pacificpaingroup.com/terms-of-use">Terms of Use</a>
+              <a href="https://pacificpaingroup.com/terms-of-use" target="_blank">Terms of Use</a>
             </li>
             <li>
-              <a href="https://pacificpaingroup.com/privacy-policy">Privacy Policy</a>
+              <a href="https://pacificpaingroup.com/privacy-policy" target="_blank">Privacy Policy</a>
             </li>
           </ul>
         </div>

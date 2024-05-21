@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Ketamine Infusion Therapy in South Bay Los Angeles`,
-    description: `Find relief with our
-    personalized and innovative treatments`,
+    description: `Find relief with our personalized and innovative treatments`,
     twitterUsername: `@PacificPainGrp`,
-    image: `src/images/icon.png`,
-    siteUrl: `https://wellness.pacificpaingroup.com`,
+    image: `src/images/ketamine-infusions-pacific-pain-and-wellness.png`,
+    siteUrl: `https://ketamine.pacificpaingroup.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,14 +25,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Pacific Pain & Wellness Group Special Offer`,
-        short_name: `Pacific Pain & Wellness Group Special Offer`,
+        name: `Pacific Pain & Wellness Group | On-Site Ketamine Infusions`,
+        short_name: `Pacific Pain & Wellness | On-Site Ketamine Infusions`,
         start_url: `/`,
         lang: `eng`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/favicon-16x16.png`,
       },
     },
     {

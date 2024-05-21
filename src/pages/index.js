@@ -54,9 +54,7 @@ const Inside = () => {
           {/* Grid layout for video and text content for md and lg screens */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* Image/Video Thumbnail */}
-            <a href="#" className="block" aria-label="open lightbox">
-            <StaticImage src="../images/relax-top.jpg" alt="John's ketamine testimonial" className="mx-auto rounded-lg"  />
-            </a>
+            <StaticImage src="../images/relax-top.jpg" alt="Woman relaxing at home after on-site ketamine infusions" className="mx-auto rounded-lg"  />
 
             {/* Text Content */}
             <div className="space-y-5">
@@ -82,7 +80,7 @@ const Inside = () => {
             <div className="text-xl font-normal mb-4 text-gray-600">The Process</div>
             <h2 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">You deserve to feel better.</h2>
             <p className="font-normal text-xl leading-relaxed text-gray-700">
-            Pioneering mental health and pain management with expertly supervised ketamine infusion therapy, ensuring personalized and effective long-term care.
+            Leading the Way in On-Site Ketamine Infusions: Expertly Supervised Mental Health and Pain Management Since 2015
             </p>
           </div>
 
@@ -92,19 +90,17 @@ const Inside = () => {
               <div className="text-purple-500 font-poppins text-6xl">01</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Take the Assessment</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
-              Begin your path to wellness with a brief assessment to understand if Ketamine therapy suits your needs."
+              Begin your path to wellness with a brief assessment to understand if Ketamine therapy suits your needs. Pacific Pain & Wellness Group has fine-tuned its ketamine protocol since 2013 to yield the most effective and long-lasting results for patients.
               </p>
             </div>
 
             {/* Process Step 2 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
               <div className="text-purple-500 font-poppins text-6xl">02</div>
-              <h3 className="font-poppins font-semibold text-xl mb-4">Explore your options</h3>
-             {/* } <p className="font-normal text-lg leading-relaxed text-gray-700">
-                If qualified, you can <a href="/resources/ketamine-cost" className="text-blue-600 hover:text-blue-800">select a treatment path</a> or <a href="#schedule" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> by filling out the consultation information form.
-  </p> */}
+              <h3 className="font-poppins font-semibold text-xl mb-4">Make an appointment</h3>
+
                 <p className="font-normal text-lg leading-relaxed text-gray-700">
-                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> with one of our healthcare professionals at our state-of-the-art facility by filling out the consultation information form.
+                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" target="_blank" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> with one of our healthcare professionals at our state-of-the-art facility by filling out the consultation information form. <strong>Same week appointments available.</strong>
               </p>
             </div>
 
@@ -113,7 +109,7 @@ const Inside = () => {
               <div className="text-purple-500 font-poppins text-6xl">03</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Start feeling better</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
-              Our clinicians and doctors will guide you through an integrative, medically supervised treatment plan that reduces the risks associated with unsupervised ketamine use, supporting your healing journey.
+              After you submit your assessment our staff will contact you to schedule an on-site ketamine infusion appointment and provide a safe and supportive environment for your healing journey. Get started today!
               </p>
             </div>
           </div>
