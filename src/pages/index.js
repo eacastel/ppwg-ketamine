@@ -116,7 +116,7 @@ const Inside = () => {
 
           <div className="text-center mt-12">
         
-                <ButtonKetamine size="lg">Take The Asessment</ButtonKetamine>
+                <ButtonKetamine size="lg">Take The Assessment</ButtonKetamine>
                 </div>
         </div>
       </section>
