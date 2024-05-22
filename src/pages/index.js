@@ -58,13 +58,13 @@ const Inside = () => {
 
             {/* Text Content */}
             <div className="space-y-5">
-              <p className="text-xl text-bold text-gray-700">
+              <p className="text-xl text-bold text-gray-800">
               Choosing Pacific Pain & Wellness Group (PPWG) for ketamine infusion therapy ensures unparalleled safety, supervision, and comprehensive care. At PPWG, ketamine infusions are administered by experienced, board-certified doctors specializing in pain management and mental health.
               </p>
-              <p className="text-base text-gray-600">
+              <p className="text-base text-gray-700">
               The clinic’s integrative approach blends cutting-edge treatments with traditional therapies, offering a holistic solution for both mind and body. This model aims to significantly and lastingly improve mental health and pain levels. Additionally, our state-of-the-art facility in Torrance, CA, provides a supportive and comfortable environment, enhancing the treatment experience.
               </p>
-              <p className="text-base text-gray-600">
+              <p className="text-base text-gray-700">
               PPWG’s multidisciplinary team of healthcare professionals offers personalized and professional care, crucial for effectively managing complex conditions. This structured, medically supervised treatment plan reduces risks associated with unsupervised ketamine use, maximizing therapeutic benefits.
               </p>
             </div>
@@ -77,7 +77,7 @@ const Inside = () => {
       <section id="process" className="py-20 bg-gradient-to-r from-blue-100 to-blue-300">
         <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <div className="text-xl font-normal mb-4 text-gray-600">The Process</div>
+            <div className="text-xl font-normal mb-4 text-gray-700">The Process</div>
             <h2 className="mb-2 text-4xl font-poppins font-semibold tracking-tight leading-tight md:text-5xl">You deserve to feel better.</h2>
             <p className="font-normal text-xl leading-relaxed text-gray-700">
             Leading the Way in On-Site Ketamine Infusions: Expertly Supervised Mental Health and Pain Management Since 2015
@@ -97,19 +97,19 @@ const Inside = () => {
             {/* Process Step 2 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
               <div className="text-purple-500 font-poppins text-6xl">02</div>
-              <h3 className="font-poppins font-semibold text-xl mb-4">Make an appointment</h3>
+              <h3 className="font-poppins font-semibold text-xl mb-4">Make An Appointment</h3>
 
                 <p className="font-normal text-lg leading-relaxed text-gray-700">
-                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" target="_blank" className="text-blue-600 hover:text-blue-800">schedule a consultation</a> with one of our healthcare professionals at our state-of-the-art facility by filling out the consultation information form. <strong>Same week appointments available.</strong>
+                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" target="_blank" className="text-blue-700 hover:text-blue-800 font-medium">schedule a consultation</a> with one of our healthcare professionals at our state-of-the-art facility by filling out the consultation information form. <strong>Same week appointments available.</strong>
               </p>
             </div>
 
             {/* Process Step 3 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
               <div className="text-purple-500 font-poppins text-6xl">03</div>
-              <h3 className="font-poppins font-semibold text-xl mb-4">Start feeling better</h3>
+              <h3 className="font-poppins font-semibold text-xl mb-4">Start Feeling Better</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
-              After you submit your assessment our staff will contact you to schedule an on-site ketamine infusion appointment and provide a safe and supportive environment for your healing journey. Get started today!
+              After you submit your assessment our staff will contact you to make an on-site ketamine infusion appointment and provide a safe and supportive environment for your healing journey. Get started today!
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ const Inside = () => {
             <div className="flex justify-center">
             <StaticImage src="../images/testimonial-beth.jpg" alt="Kery's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
-              <p className="text-center text-gray-600">“Everyone was helpful and attentive, from the front desk staff, to the nurse and the PA. The appt ran on time. My issue was addressed and I was scheduled for my procedure the very next week. Office is clean and comfortable. I would highly recommend the services of Pacific Pain & Wellness”</p>
+              <p className="text-center text-gray-600">“Everyone was helpful and attentive, from the front desk staff, to the nurse and the PA. The appointment ran on time. My issue was addressed and I was scheduled for my procedure the very next week. Office is clean and comfortable. I would highly recommend the services of Pacific Pain & Wellness”</p>
               <p className="text-center font-semibold">Kery W.</p>
               <p className="text-center text-sm text-gray-500">Pacific Pain & Wellness Client</p>
             </div>
@@ -155,7 +155,7 @@ const Inside = () => {
             <div className="flex justify-center">
             <StaticImage src="../images/testimonial-john.jpg" alt="Joshua's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
-              <p className="text-center text-gray-600">“I loved my experience here. I came here with chronic pain & depression & received TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments Every day (xcept weekends) for many weeks. I looked forward to each visit as I continued to feel the Positive effects of the treatments I receeived. ”</p>
+              <p className="text-center text-gray-600">“I loved my experience here. I came here with chronic pain & depression & received TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments every day (except weekends) for many weeks. I looked forward to each visit as I continued to feel the positive effects of the treatments I recieved. ”</p>
               <p className="text-center font-semibold">Joshua B.</p>
               <p className="text-center text-sm text-gray-500">Pacific Pain & Wellness Client</p>
             </div>

@@ -32,6 +32,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `browser`,
+        icon: `src/images/favicon-16x16.png`,
         icons: [
           {
             src: `src/images/favicon-16x16.png`,
@@ -39,7 +40,7 @@ module.exports = {
             type: `image/png`,
           },
           {
-            src: `src/images/favicon-32x32.png`,
+            src: `src/images/icon-32x32.png`,
             sizes: `32x32`,
             type: `image/png`,
           },
@@ -70,6 +71,11 @@ module.exports = {
         },
       },
     },
-    
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "5037797342981559",
+      },
+    },
   ],
 };

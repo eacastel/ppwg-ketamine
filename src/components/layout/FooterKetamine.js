@@ -10,7 +10,7 @@ const FooterKetamine = () => {
     }
   };
   return (
-    <footer id="contact" className="container mx-auto py-8 px-3 mt-20 mb-8 text-gray-800">
+    <footer id="contact" className="container mx-auto py-8 px-3 mt-10 mb-20 text-gray-800">
       <div className="flex -mx-3">
         <div className="flex-1 px-3">
           <h2 className="text-lg font-semibold">Call Us / Our Location</h2>
@@ -26,21 +26,20 @@ const FooterKetamine = () => {
           <h2 className="text-lg font-semibold">Important Links</h2>
           <ul className="mt-4 leading-loose">
             <li>
-              <a href="https://pacificpaingroup.com/">Pacific Pain & Wellness Group</a>
+              <a href="https://pacificpaingroup.com/"  target="_blank">Pacific Pain & Wellness Group</a>
             </li>
             <li>
-              <a href="https://pacificpaingroup.com/terms-of-use">Terms of Use</a>
+              <a href="https://pacificpaingroup.com/terms-of-use"  target="_blank">Terms of Use</a>
             </li>
             <li>
-              <a href="https://pacificpaingroup.com/privacy-policy">Privacy Policy</a>
+              <a href="https://pacificpaingroup.com/privacy-policy"  target="_blank">Privacy Policy</a>
             </li>
           </ul>
         </div>
         <div className="flex-1 px-3">
-          <h2 className="text-lg font-semibold">&nbsp;</h2>
           <ul className="mt-4 leading-loose relative">
             <li>
-            <StaticImage src="../../images/legit-script-seal.png" alt="happy smiling 30 year old attractive brunette in a thick cotton sweater" className="absolute top-0 right-0 "  />
+            <StaticImage src="../../images/legit-script-seal.png" alt="LegitScript certification logo" className="absolute top-0 right-0 "  />
             
             </li>
           </ul>
