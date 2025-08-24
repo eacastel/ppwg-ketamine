@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex-1 px-3">
           <h2 className="text-lg font-semibold">Call Us</h2>
           <p className="mt-5">
-            <a href="tel:+13104377399" onClick={handlePhoneClick}>(310) 437-7399</a>
+            <a href="tel:+13104377399" rel="nofollow">(310) 437-7399</a>
           </p>
         </div>
         <div className="flex-1 px-3">
