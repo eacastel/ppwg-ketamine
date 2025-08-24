@@ -1,5 +1,6 @@
 .env.production
 .env.development
+*.gz
 
 # Logs
 logs
@@ -72,3 +73,11 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 yarn.lock
+# --- repo hygiene ---
+*.tar.gz
+*.tgz
+*.zip
+
+# Gatsby build artifacts
+public/
+.cache/

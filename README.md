@@ -1,25 +1,10 @@
-# Gatsby Lander
+# Pacific Pain & Wellness Group – Ketamine Landing (Gatsby)
 
-This is an experimental starter built using [gatsby-theme-codebushi](https://github.com/codebushi/gatsby-theme-codebushi), a theme which uses [Tailwind CSS](https://tailwindcss.com/).
+Simple Gatsby site for pacificpaingroup.com (ketamine subdomain).
 
-Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
+## Stack
+- Gatsby 5
+- GTM: `GTM-M55HVZQ3`
+- Google tag (GA4): `G-VK55BK4WPF`
+- Google tag (Ads): `AW-11335981586`
 
-## Preview
-
-https://gatsby-lander.surge.sh/
-
-## Installation
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-lander https://github.com/codebushi/gatsby-starter-lander`
-
-Run `gatsby develop` in the terminal to start the dev site.
-
-## Notes
-
-These libraries do not yet fully support the upgrade to Gatsby 3.x:
-* gatsby-plugin-react-helmet
-* gatsby-plugin-emotion
-* gatsby-plugin-postcss
-* gatsby-theme-codebushi
