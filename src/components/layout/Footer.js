@@ -2,13 +2,6 @@ import React from 'react';
 
 
 const Footer = () => {
-  const handlePhoneClick = () => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-11335981586/_NkSCLWp__oYEJK0tZ0q',
-      });
-    }
-  };
   return (
     <footer id="contact" className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
       <div className="flex -mx-3">

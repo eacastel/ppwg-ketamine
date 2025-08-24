@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `browser`,
-        icon: `src/images/favicon-16x16.png`,
+        icon: `src/images/favicon-ppwg.png`,
         icons: [
           {
             src: `src/images/favicon-16x16.png`,
@@ -55,20 +55,6 @@ module.exports = {
             type: `image/png`,
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-VK55BK4WPF",
-          "AW-11335981586",
-        ],
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          delayOnRouteUpdate: 0,
-        },
       },
     },
     {

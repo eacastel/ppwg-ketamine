@@ -2,13 +2,6 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const FooterKetamine = () => {
-  const handlePhoneClick = () => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-11335981586/_NkSCLWp__oYEJK0tZ0q',
-      });
-    }
-  };
   return (
     <footer id="contact" className="container mx-auto py-8 px-3 mt-10 mb-20 text-gray-800">
       <div className="flex -mx-3">

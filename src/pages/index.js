@@ -137,7 +137,7 @@ const Inside = () => {
             <div className="flex justify-center">
             <StaticImage src="../images/testimonial-beth.jpg" alt="Kery's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
-              <p className="text-center text-gray-600">“Everyone was helpful and attentive, from the front desk staff, to the nurse and the PA. The appointment ran on time. My issue was addressed and I was scheduled for my procedure the very next week. Office is clean and comfortable. I would highly recommend the services of Pacific Pain & Wellness”</p>
+              <p className="text-center text-gray-600">“Everyone was helpful and attentive, from the front desk staff, to the nurse and the PA. The appointment ran on time. My issue was addressed and I was scheduled for my procedure the very next week. Office is clean and comfortable. I would highly recommend the services of Pacific Pain & Wellness.”</p>
               <p className="text-center font-semibold">Kery W.</p>
               <p className="text-center text-sm text-gray-500">Pacific Pain & Wellness Client</p>
             </div>
@@ -155,7 +155,7 @@ const Inside = () => {
             <div className="flex justify-center">
             <StaticImage src="../images/testimonial-john.jpg" alt="Joshua's ketamine testimonial" className="mx-auto rounded-full lg:w-3/4" />
             </div>
-              <p className="text-center text-gray-600">“I loved my experience here. I came here with chronic pain & depression & received TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments every day (except weekends) for many weeks. I looked forward to each visit as I continued to feel the positive effects of the treatments I recieved. ”</p>
+              <p className="text-center text-gray-600">“I loved my experience here. I came here with chronic pain & depression & received TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments every day (except weekends) for many weeks. I looked forward to each visit as I continued to feel the positive effects of the treatments I received.”</p>
               <p className="text-center font-semibold">Joshua B.</p>
               <p className="text-center text-sm text-gray-500">Pacific Pain & Wellness Client</p>
             </div>

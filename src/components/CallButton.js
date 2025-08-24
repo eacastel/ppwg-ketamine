@@ -6,14 +6,6 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const sendGoogleTagEvent = () => {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag('event', 'conversion', {
-      'send_to': 'AW-11335981586/_NkSCLWp__oYEJK0tZ0q',
-    });
-  }
-};
-
 const Button = ({ children, className = '', size, phoneNumber }) => {
   const buttonClassNames = `
     ${sizes[size] || sizes.default}
