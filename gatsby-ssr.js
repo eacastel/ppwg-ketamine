@@ -14,6 +14,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-M55HVZQ3');`,
       }}
     />,
+    <meta
+      key="fb-domain-verification"
+      name="facebook-domain-verification"
+      content="xag2ppwaqjtrhm9zpql57potzfyyhv"
+    />,
   ]);
 
   setPreBodyComponents([
@@ -28,3 +33,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </noscript>,
   ]);
 };
+
+
