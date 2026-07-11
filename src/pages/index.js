@@ -27,7 +27,7 @@ const Inside = () => {
                   <span className=' text-sm leading-none'>Health insurance is not accepted at this time.</span>
                 </div>
                 <div className="inline-block pt-4 mt-6 py-6 ">
-                <ButtonKetamine size="lg">Am I a Candidate?</ButtonKetamine>
+                <ButtonKetamine size="lg">Request a Private Consultation</ButtonKetamine>
                 </div>
               </div>
             </div>
@@ -59,13 +59,13 @@ const Inside = () => {
             {/* Text Content */}
             <div className="space-y-5">
               <p className="text-xl text-bold text-gray-800">
-              Choosing Pacific Pain & Wellness Group (PPWG) for ketamine infusion therapy ensures unparalleled safety, supervision, and comprehensive care. At PPWG, ketamine infusions are administered by experienced, board-certified doctors specializing in pain management and mental health.
+              Choosing Pacific Pain & Wellness Group for ketamine infusion therapy ensures unparalleled safety, supervision, and comprehensive care. At Pacific Pain & Wellness Group, ketamine infusions are administered by experienced, board-certified doctors specializing in pain management and mental health.
               </p>
               <p className="text-base text-gray-700">
               The clinic’s integrative approach blends cutting-edge treatments with traditional therapies, offering a holistic solution for both mind and body. This model aims to significantly and lastingly improve mental health and pain levels. Additionally, our state-of-the-art facility in Torrance, CA, provides a supportive and comfortable environment, enhancing the treatment experience.
               </p>
               <p className="text-base text-gray-700">
-              PPWG’s multidisciplinary team of healthcare professionals offers personalized and professional care, crucial for effectively managing complex conditions. This structured, medically supervised treatment plan reduces risks associated with unsupervised ketamine use, maximizing therapeutic benefits.
+              Pacific Pain & Wellness Group’s multidisciplinary team of healthcare professionals offers personalized and professional care, crucial for effectively managing complex conditions. This structured, medically supervised treatment plan reduces risks associated with unsupervised ketamine use, maximizing therapeutic benefits.
               </p>
             </div>
           </div>
@@ -88,19 +88,19 @@ const Inside = () => {
             {/* Process Step 1 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
               <div className="text-purple-500 font-poppins text-6xl">01</div>
-              <h3 className="font-poppins font-semibold text-xl mb-4">Take the Assessment</h3>
+              <h3 className="font-poppins font-semibold text-xl mb-4">Request a Private Consultation</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
-              Begin your path to wellness with a brief assessment to understand if Ketamine therapy suits your needs. Pacific Pain & Wellness Group has fine-tuned its ketamine protocol since 2013 to yield the most effective and long-lasting results for patients.
+              Begin with a secure consultation request so our team can review your interest in medically supervised ketamine therapy and guide you through the next steps.
               </p>
             </div>
 
             {/* Process Step 2 */}
             <div className="bg-white shadow-lg rounded-xl p-8">
               <div className="text-purple-500 font-poppins text-6xl">02</div>
-              <h3 className="font-poppins font-semibold text-xl mb-4">Make An Appointment</h3>
+              <h3 className="font-poppins font-semibold text-xl mb-4">Connect With Our Team</h3>
 
                 <p className="font-normal text-lg leading-relaxed text-gray-700">
-                If qualified, you can <a href="https://pacificpaingroup.com/request-an-appointment" target="_blank" className="text-blue-700 hover:text-blue-800 font-medium">schedule a consultation</a> with one of our healthcare professionals at our state-of-the-art facility by filling out the consultation information form. <strong>Same week appointments available.</strong>
+                After we receive your private consultation request, our staff can help you schedule a consultation with one of our healthcare professionals at our Torrance facility. <strong>Same week appointments available.</strong>
               </p>
             </div>
 
@@ -109,14 +109,14 @@ const Inside = () => {
               <div className="text-purple-500 font-poppins text-6xl">03</div>
               <h3 className="font-poppins font-semibold text-xl mb-4">Start Feeling Better</h3>
               <p className="font-normal text-lg leading-relaxed text-gray-700">
-              After you submit your assessment our staff will contact you to make an on-site ketamine infusion appointment and provide a safe and supportive environment for your healing journey. Get started today!
+              After you submit your private consultation request, our staff will follow up to discuss next steps and available in-clinic treatment options in a safe, supportive setting.
               </p>
             </div>
           </div>
 
           <div className="text-center mt-12">
         
-                <ButtonKetamine size="lg">Take The Assessment</ButtonKetamine>
+                <ButtonKetamine size="lg">Request a Private Consultation</ButtonKetamine>
                 </div>
         </div>
       </section>
@@ -174,7 +174,7 @@ const Inside = () => {
             <p className="text-lg text-white mb-6"> Discover how personalized, in-clinic ketamine therapy, administered by caring and experienced professionals, can unlock a future of well-being and endless potential.</p>
             
             <div className="inline-block pt-4 mt-6 py-6 ">
-            <ButtonKetamine size="lg" variant="secondary">Take the Assessment</ButtonKetamine>
+            <ButtonKetamine size="lg" variant="secondary">Request a Private Consultation</ButtonKetamine>
             </div>
 
           </div>

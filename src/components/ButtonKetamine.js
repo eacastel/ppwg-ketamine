@@ -16,7 +16,7 @@ const ButtonKetamine = ({
   className = "",
   size,
   variant = "primary",
-  href = "https://pacificpaingroup.com/form/ketamine-assessment",
+  href = "https://intake.pacificpaingroup.com/private-consultation-request",
   cta = "assessment-cta",
   section = "generic",
 }) => {

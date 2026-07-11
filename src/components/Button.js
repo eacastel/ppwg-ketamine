@@ -12,7 +12,7 @@ const Button = ({
   className = "",
   size,
   // Defaults to your Drupal form; adjust if needed
-  href = "https://pacificpaingroup.com/form/ketamine-assessment",
+  href = "https://intake.pacificpaingroup.com/private-consultation-request",
   cta = "assessment-cta",
   section = "generic",
 }) => {
