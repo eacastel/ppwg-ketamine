@@ -1,0 +1,320 @@
+{
+  "checkedAt": "2026-09-13T12:41:19.712Z",
+  "status": "UNPUBLISHED_WORKSPACE_DRAFT",
+  "variables": [
+    {
+      "path": "accounts/6231522134/containers/185452222/workspaces/24/variables/76",
+      "accountId": "6231522134",
+      "containerId": "185452222",
+      "workspaceId": "24",
+      "variableId": "76",
+      "name": "PPWG - Ketamine CTA action",
+      "type": "jsm",
+      "notes": "Allowlisted public ketamine landing markup only. No URL, text, form fields or treatment-condition labels.",
+      "parameter": [
+        {
+          "type": "template",
+          "key": "javascript",
+          "value": "function() { try { var el = {{Click Element}}; while (el && el.nodeType === 1 && el.tagName !== 'A') el = el.parentElement; if (!el || el.getAttribute('data-service') !== 'ketamine') return ''; var value = el.getAttribute('data-cta'); return [\"consultation-cta\",\"call-cta\",\"directions-cta\",\"profile-cta\",\"trust-cta\"].indexOf(value) !== -1 ? value : ''; } catch(e) { return ''; } }"
+        }
+      ],
+      "fingerprint": "1789303180169",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6231522134/containers/185452222/workspaces/24/variables/76?apiLink=variable"
+    },
+    {
+      "path": "accounts/6231522134/containers/185452222/workspaces/24/variables/77",
+      "accountId": "6231522134",
+      "containerId": "185452222",
+      "workspaceId": "24",
+      "variableId": "77",
+      "name": "PPWG - Ketamine CTA placement",
+      "type": "jsm",
+      "notes": "Allowlisted public ketamine landing markup only. No URL, text, form fields or treatment-condition labels.",
+      "parameter": [
+        {
+          "type": "template",
+          "key": "javascript",
+          "value": "function() { try { var el = {{Click Element}}; while (el && el.nodeType === 1 && el.tagName !== 'A') el = el.parentElement; if (!el || el.getAttribute('data-service') !== 'ketamine') return ''; var value = el.getAttribute('data-section'); return [\"header\",\"hero\",\"care\",\"process\",\"pricing\",\"closing\",\"mobile-bar\",\"footer\"].indexOf(value) !== -1 ? value : ''; } catch(e) { return ''; } }"
+        }
+      ],
+      "fingerprint": "1789303203152",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6231522134/containers/185452222/workspaces/24/variables/77?apiLink=variable"
+    }
+  ],
+  "trigger": {
+    "path": "accounts/6231522134/containers/185452222/workspaces/24/triggers/78",
+    "accountId": "6231522134",
+    "containerId": "185452222",
+    "workspaceId": "24",
+    "triggerId": "78",
+    "name": "PPWG - Ketamine landing actions (explicit consent)",
+    "type": "linkClick",
+    "filter": [
+      {
+        "type": "equals",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "arg0",
+            "value": "{{Page Hostname}}"
+          },
+          {
+            "type": "template",
+            "key": "arg1",
+            "value": "ketamine.pacificpaingroup.com"
+          }
+        ]
+      },
+      {
+        "type": "equals",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "arg0",
+            "value": "{{Page Path}}"
+          },
+          {
+            "type": "template",
+            "key": "arg1",
+            "value": "/"
+          }
+        ]
+      },
+      {
+        "type": "equals",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "arg0",
+            "value": "{{PPWG - Explicit analytics consent}}"
+          },
+          {
+            "type": "template",
+            "key": "arg1",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": "matchRegex",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "arg0",
+            "value": "{{PPWG - Ketamine CTA action}}"
+          },
+          {
+            "type": "template",
+            "key": "arg1",
+            "value": "^(consultation-cta|call-cta|directions-cta|profile-cta|trust-cta)$"
+          }
+        ]
+      }
+    ],
+    "autoEventFilter": [
+      {
+        "type": "equals",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "arg0",
+            "value": "{{Page Hostname}}"
+          },
+          {
+            "type": "template",
+            "key": "arg1",
+            "value": "ketamine.pacificpaingroup.com"
+          }
+        ]
+      },
+      {
+        "type": "equals",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "arg0",
+            "value": "{{Page Path}}"
+          },
+          {
+            "type": "template",
+            "key": "arg1",
+            "value": "/"
+          }
+        ]
+      }
+    ],
+    "waitForTags": {
+      "type": "boolean",
+      "value": "true"
+    },
+    "checkValidation": {
+      "type": "boolean",
+      "value": "true"
+    },
+    "waitForTagsTimeout": {
+      "type": "template",
+      "value": "1000"
+    },
+    "uniqueTriggerId": {
+      "type": "template"
+    },
+    "fingerprint": "1789303225721",
+    "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6231522134/containers/185452222/workspaces/24/triggers/78?apiLink=trigger",
+    "notes": "Public ketamine root only. Allowlisted actions plus explicit CookieYes analytics consent and no GPC. No intake-host trigger; bounded navigation wait."
+  },
+  "tag": {
+    "path": "accounts/6231522134/containers/185452222/workspaces/24/tags/79",
+    "accountId": "6231522134",
+    "containerId": "185452222",
+    "workspaceId": "24",
+    "tagId": "79",
+    "name": "GA4 - Ketamine landing actions",
+    "type": "gaawe",
+    "notes": "Draft for Website preview before publishing. Public service context, not patient diagnosis or confirmed lead. cta_type separates contact intent from maps/profiles/trust. Fixed page context strips query/hash; no user properties, destination URLs, click text or form data. Not an Ads conversion or audience.",
+    "parameter": [
+      {
+        "type": "boolean",
+        "key": "sendEcommerceData",
+        "value": "false"
+      },
+      {
+        "type": "list",
+        "key": "eventSettingsTable",
+        "list": [
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "service_context"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue",
+                "value": "ketamine"
+              }
+            ]
+          },
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "cta_type"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue",
+                "value": "{{PPWG - Ketamine CTA action}}"
+              }
+            ]
+          },
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "cta_placement"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue",
+                "value": "{{PPWG - Ketamine CTA placement}}"
+              }
+            ]
+          },
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "page_location"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue",
+                "value": "https://ketamine.pacificpaingroup.com/"
+              }
+            ]
+          },
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "page_referrer"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue"
+              }
+            ]
+          },
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "page_title"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue",
+                "value": "Ketamine care"
+              }
+            ]
+          },
+          {
+            "type": "map",
+            "map": [
+              {
+                "type": "template",
+                "key": "parameter",
+                "value": "allow_ad_personalization_signals"
+              },
+              {
+                "type": "template",
+                "key": "parameterValue",
+                "value": "false"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "template",
+        "key": "eventName",
+        "value": "ketamine_landing_click"
+      },
+      {
+        "type": "template",
+        "key": "measurementIdOverride",
+        "value": "G-VK55BK4WPF"
+      }
+    ],
+    "fingerprint": "1789303252325",
+    "firingTriggerId": [
+      "78"
+    ],
+    "tagFiringOption": "oncePerEvent",
+    "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6231522134/containers/185452222/workspaces/24/tags/79?apiLink=tag",
+    "consentSettings": {
+      "consentStatus": "needed",
+      "consentType": {
+        "type": "list",
+        "list": [
+          {
+            "type": "template",
+            "value": "analytics_storage"
+          }
+        ]
+      }
+    }
+  }
+}

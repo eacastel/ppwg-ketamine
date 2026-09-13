@@ -31,6 +31,7 @@ const HeaderKetamine = () => (
       <a
         href="tel:+13104377399"
         className="ketamine-header-call"
+        data-service="ketamine"
         data-cta="call-cta"
         data-section="header"
       >

@@ -10,6 +10,7 @@ const ButtonKetamine = ({
   <a
     href={href}
     className={`ketamine-button ketamine-button--${variant} ${className}`}
+    data-service="ketamine"
     data-cta="consultation-cta"
     data-section={section}
   >

@@ -10,6 +10,7 @@ const Actions = ({ section, light = false }) => (
     <a
       href="tel:+13104377399"
       className={`ketamine-button ketamine-button--${light ? 'light-outline' : 'outline'}`}
+      data-service="ketamine"
       data-cta="call-cta"
       data-section={section}
     >
@@ -36,7 +37,7 @@ const faqs = [
   ],
   [
     'Can I visit from Long Beach or elsewhere in Los Angeles?',
-    'Yes. Our clinic is in Torrance at 23150 Crenshaw Blvd, Suite 100. We welcome patients from the South Bay, Long Beach and Greater Los Angeles. All care described on this page takes place at our Torrance clinic.',
+    'Yes. Our clinic is in Torrance at 23150 Crenshaw Blvd, Suite 100. We welcome patients from the South Bay, Long Beach and Greater Los Angeles. PPWG also has a Manhattan Beach office. Our team will confirm the location for your ketamine appointment.',
   ],
   [
     'What happens after I send a request?',
@@ -334,6 +335,7 @@ const IndexPage = () => (
         <a
           href="tel:+13104377399"
           className="ketamine-button ketamine-button--outline"
+          data-service="ketamine"
           data-cta="call-cta"
           data-section="mobile-bar"
           aria-label="Call our ketamine team at 310 437 7399"

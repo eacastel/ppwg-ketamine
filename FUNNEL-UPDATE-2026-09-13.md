@@ -26,3 +26,13 @@ Browser check: `node scripts/check-landing.cjs`, with isolated Chrome debugging 
 ## Release handoff
 
 Website should review this branch, confirm live consent controls do not overlap the mobile bar, and verify the public CTA tracking contract before release. The shared Intake form still uses generic consultation copy; ketamine-specific protected-form presentation and confirmation belong to Intake's separate repository. Existing form route remains intact. No production deployment, Google Ads changes, budget changes or paid services were made. October 1 remains the earliest paid-pilot start.
+
+## Footer and attribution follow-up
+
+Added Torrance and Manhattan Beach locations with two lazy-loaded Google Maps embeds and directions links. Manhattan Beach address verified against the live main site's HTML and structured data at https://pacificpaingroup.com/manhattan-beach: 2809 N Sepulveda Blvd, Suite C, Manhattan Beach, CA 90266-2727. Scheduling copy asks the office to confirm the ketamine appointment location rather than asserting every service is offered at both offices.
+
+Replicated the main footer's LegitScript verification destination and current seal 5280196, Google Business, Yelp, Facebook, Instagram, LinkedIn and Psychology Today profile links. Social SVGs were copied from the same Simple Icons sources used by the main footer; the Psychology Today SVG is copied from its existing footer markup. The LegitScript badge links to verification for pacificpaingroup.com. No social feeds, new pixels, Maps API keys or paid Maps services were added.
+
+Every contact, directions and profile link has data-service="ketamine". GTM workspace 24 now contains new variables 76/77, trigger 78 and tag 79, saved in gtm-ketamine-landing-draft.json. Event: ketamine_landing_click; fields: service_context=ketamine, cta_type and cta_placement. Consultation/call actions are inquiry-intent signals; directions/profile/trust clicks remain separate engagement, not leads. No condition-specific user labels or audience creation.
+
+These GTM changes are UNPUBLISHED pending Website preview and container review. They require explicit CookieYes analytics consent, no GPC, and analytics_storage. Trigger is scoped to the public ketamine homepage, with fixed URL/title/referrer fields and no form data. Local variable checks verified nested clicks, allowed values and fail-closed unknown values. Browser checks verified two maps, six profile links, the verification link and service attribution attributes. Maps rendered in the desktop preview. Live GA4 receipt is not yet verified; this does not change the previously agreed Website verification gate.

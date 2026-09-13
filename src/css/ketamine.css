@@ -588,3 +588,94 @@ html {
     transition: none;
   }
 }
+
+/* Locations and trust links follow the same landing-page card and type scale. */
+.ketamine-location-heading {
+  max-width: 730px;
+  margin-bottom: 30px;
+}
+.ketamine-location-heading h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.85rem);
+}
+.ketamine-location-heading p {
+  font-size: 16px;
+  color: var(--ketamine-muted);
+  margin-bottom: 16px;
+}
+.ketamine-location-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-bottom: 48px;
+}
+.ketamine-location-card {
+  border: 1px solid var(--ketamine-line);
+  border-radius: 22px;
+  overflow: hidden;
+  background: #f4f8fb;
+}
+.ketamine-location-copy {
+  padding: 26px;
+}
+.ketamine-location-copy h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.ketamine-location-copy address {
+  margin: 12px 0;
+}
+.ketamine-location-copy > a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ketamine-location-card iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  display: block;
+}
+.ketamine-footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1fr;
+  gap: 36px;
+  border-top: 1px solid var(--ketamine-line);
+  padding-top: 36px;
+}
+.ketamine-certification img {
+  display: block;
+}
+.ketamine-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ketamine-social-links a {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ketamine-line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ketamine-social-links a:hover {
+  background: #eaf4ff;
+}
+.ketamine-social-links img {
+  opacity: 0.75;
+}
+.ketamine-psychology {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin-top: 18px;
+}
+@media (max-width: 767px) {
+  .ketamine-location-grid,
+  .ketamine-footer-bottom {
+    grid-template-columns: 1fr;
+  }
+}

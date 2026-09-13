@@ -104,7 +104,7 @@ const WebSocket = require('ws');
         deviceScaleFactor: 1,
         mobile: width < 768,
       });
-      for (const section of ['ketamine-care', 'pricing', 'contact']) {
+      for (const section of ['ketamine-care', 'pricing', 'contact', 'location']) {
         await evaluate(`document.getElementById('${section}').scrollIntoView()`);
         const screenshot = await call('Page.captureScreenshot', {
           format: 'png',
@@ -118,6 +118,20 @@ const WebSocket = require('ws');
     }
     await evaluate("document.querySelector('summary').click()");
     assert.equal(await evaluate("document.querySelector('details').open"), true);
+    const footer = await evaluate(
+      `({maps:[...document.querySelectorAll('#location iframe')].map(e=>({title:e.title,src:e.src})),profiles:document.querySelectorAll('#location [data-cta="profile-cta"]').length,trust:document.querySelector('#location [data-cta="trust-cta"]').href,unscoped:[...document.querySelectorAll('[data-cta]')].filter(e=>e.dataset.service!=='ketamine').length})`,
+    );
+    assert.equal(footer.maps.length, 2);
+    assert.ok(
+      footer.maps.some((m) => m.src.includes('2809') && m.title.includes('Manhattan Beach')),
+    );
+    assert.ok(footer.maps.some((m) => m.src.includes('23150') && m.title.includes('Torrance')));
+    assert.equal(footer.profiles, 6);
+    assert.match(footer.trust, /legitscript.com/);
+    assert.equal(footer.unscoped, 0);
+    console.log(
+      'PASS: two location maps, six profile links, verification link, ketamine context on every CTA.',
+    );
     assert.deepEqual(errors, []);
     console.log(
       'PASS: unique IDs, working anchors, same-tab consultation routes, metadata, FAQ interaction, no runtime exceptions. No form submissions.',
