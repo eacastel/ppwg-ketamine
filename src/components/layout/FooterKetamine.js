@@ -1,4 +1,5 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const locations = [
   {
@@ -77,6 +78,12 @@ const FooterKetamine = () => (
       </div>
       <div className="ketamine-footer-bottom">
         <div>
+          <StaticImage
+            src="../../images/ppwg-logo.png"
+            alt="Pacific Pain & Wellness Group"
+            width={220}
+            className="ketamine-footer-logo"
+          />
           <h2>Pacific Pain & Wellness Group</h2>
           <ul>
             <li>

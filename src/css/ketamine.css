@@ -679,3 +679,61 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* Exact footer blue verified from the live main website stylesheet. */
+.ketamine-footer {
+  background: #006db8;
+  color: #fff;
+}
+.ketamine-footer h2,
+.ketamine-footer a {
+  color: #fff;
+}
+.ketamine-footer .ketamine-location-heading p {
+  color: #f0f6fc;
+}
+.ketamine-footer a:hover {
+  color: #fff;
+}
+.ketamine-footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+.ketamine-footer-logo {
+  max-width: 220px;
+  margin-bottom: 22px;
+  filter: brightness(0) invert(1);
+}
+.ketamine-location-card {
+  color: var(--ketamine-ink);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.ketamine-footer .ketamine-location-card a {
+  color: #174a85;
+}
+.ketamine-footer .ketamine-location-card a:hover {
+  color: #103661;
+}
+.ketamine-social-links a {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.ketamine-social-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.ketamine-social-links img,
+.ketamine-psychology img {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+.ketamine-certification > a {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: #fff;
+}
+.ketamine-footer a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+.ketamine-footer .ketamine-location-card a:focus-visible {
+  outline-color: #174a85;
+}
