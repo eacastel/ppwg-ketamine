@@ -1,12 +1,15 @@
 import React from 'react';
-import FooterKetamine from './FooterKetamine';
+import FooterKetamine, { KetamineLocations } from './FooterKetamine';
 import HeaderKetamine from './HeaderKetamine';
 
 const Layout2 = ({ children }) => {
   return (
     <>
       <HeaderKetamine />
-       <main className="text-gray-900">{children}</main>
+      <main id="main-content" className="text-gray-900" tabIndex={-1}>
+        {children}
+        <KetamineLocations />
+      </main>
       <FooterKetamine />
     </>
   );

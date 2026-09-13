@@ -81,3 +81,6 @@ yarn.lock
 # Gatsby build artifacts
 public/
 .cache/
+
+# Local preview, browser profile and QA artifacts
+.local-runtime/

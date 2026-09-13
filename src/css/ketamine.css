@@ -1,0 +1,785 @@
+/* Shared landing-page scale; retains PPWG's Poppins headings and blue/teal palette. */
+:root {
+  --ketamine-ink: #152b40;
+  --ketamine-muted: #4b6072;
+  --ketamine-blue: #2563eb;
+  --ketamine-teal: #0f766e;
+  --ketamine-line: #dce7ee;
+}
+html {
+  scroll-padding-top: 110px;
+}
+.ketamine-page,
+.ketamine-header,
+.ketamine-footer {
+  color: var(--ketamine-ink);
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.ketamine-container {
+  width: min(1200px, 100% - 48px);
+  margin-inline: auto;
+}
+.ketamine-page h1,
+.ketamine-page h2,
+.ketamine-page h3,
+.ketamine-footer h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+}
+.ketamine-page h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4.25rem);
+  margin: 14px 0 22px;
+}
+.ketamine-page h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.85rem);
+  margin: 0 0 24px;
+}
+.ketamine-page h3 {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  margin: 0 0 18px;
+}
+.ketamine-page p {
+  margin: 0 0 20px;
+  color: var(--ketamine-muted);
+}
+.ketamine-page .ketamine-eyebrow {
+  color: var(--ketamine-teal);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.ketamine-section {
+  padding: 88px 0;
+}
+.ketamine-section-heading {
+  max-width: 790px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+.ketamine-section-heading p:last-child {
+  max-width: 670px;
+  margin-inline: auto;
+}
+.ketamine-soft {
+  background: #f4f8fb;
+}
+.ketamine-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #fff;
+  border-bottom: 1px solid var(--ketamine-line);
+}
+.ketamine-header-inner {
+  min-height: 94px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  justify-content: space-between;
+}
+.ketamine-logo {
+  display: block;
+  width: 210px;
+  flex-shrink: 0;
+}
+.ketamine-nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ketamine-nav a {
+  color: var(--ketamine-ink);
+  padding: 12px 0;
+}
+.ketamine-nav a:hover {
+  color: var(--ketamine-blue);
+}
+.ketamine-header-call {
+  display: none;
+}
+.ketamine-skip {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  padding: 12px 20px;
+  background: white;
+  z-index: 60;
+}
+.ketamine-skip:focus {
+  top: 8px;
+}
+.ketamine-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid transparent;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  text-decoration: none;
+}
+.ketamine-button--primary {
+  color: #fff;
+  background: var(--ketamine-blue);
+}
+.ketamine-button--primary:hover {
+  color: #fff;
+  background: #1d4ed8;
+}
+.ketamine-button--outline {
+  color: #1d4ed8;
+  border-color: #8faed7;
+  background: #fff;
+}
+.ketamine-button--outline:hover {
+  color: #1e40af;
+  background: #eff6ff;
+}
+.ketamine-button--secondary {
+  background: #fff;
+  color: #174a85;
+}
+.ketamine-button--secondary:hover {
+  background: #eaf4ff;
+  color: #174a85;
+}
+.ketamine-button--light-outline {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.ketamine-button--light-outline:hover {
+  background: #ffffff18;
+  color: #fff;
+}
+.ketamine-page a:focus-visible,
+.ketamine-header a:focus-visible,
+.ketamine-footer a:focus-visible,
+.ketamine-page summary:focus-visible {
+  outline: 3px solid #9333ea;
+  outline-offset: 4px;
+}
+.ketamine-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 14px;
+}
+.ketamine-page .ketamine-note {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 14px 0 0;
+}
+.ketamine-hero {
+  background:
+    linear-gradient(90deg, #f3f8fbe8 0%, #f3f8fbd9 38%, transparent 72%),
+    url('/hero-slider3.jpg') center/cover no-repeat;
+}
+.ketamine-hero-copy {
+  max-width: 650px;
+  padding: 68px 0 54px;
+}
+.ketamine-hero-copy > p:not(.ketamine-eyebrow) {
+  max-width: 555px;
+}
+.ketamine-page .ketamine-lead {
+  font-size: 23px;
+  line-height: 1.5;
+  color: var(--ketamine-ink);
+}
+.ketamine-price-summary {
+  display: block;
+  color: var(--ketamine-ink);
+  border-top: 1px solid #bdcfde;
+  margin-top: 26px;
+  padding-top: 19px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.ketamine-price-summary:hover {
+  color: #1d4ed8;
+}
+.ketamine-price-summary small {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.ketamine-hero-mobile {
+  display: none;
+}
+.ketamine-trust-strip {
+  background: linear-gradient(100deg, #215cbe, #107d89);
+  color: white;
+}
+.ketamine-trust-strip > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ketamine-care-grid,
+.ketamine-split,
+.ketamine-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+.ketamine-care-grid {
+  align-items: stretch;
+  gap: 28px;
+}
+.ketamine-care-card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  border: 1px solid var(--ketamine-line);
+  border-radius: 22px;
+  box-shadow: 0 10px 30px #16384c08;
+  background: linear-gradient(150deg, #f0f7ff, #fff 65%);
+  scroll-margin-top: 16px;
+}
+.ketamine-care-card:nth-child(2) {
+  background: linear-gradient(150deg, #effbf8, #fff 65%);
+}
+.ketamine-card-label {
+  color: var(--ketamine-teal);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.ketamine-care-card .ketamine-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+.ketamine-rounded-image {
+  border-radius: 24px;
+}
+.ketamine-proof-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+.ketamine-proof-list li {
+  padding: 16px 0 16px 22px;
+  border-left: 3px solid #72b6c5;
+  margin: 10px 0;
+}
+.ketamine-proof-list strong,
+.ketamine-proof-list span {
+  display: block;
+}
+.ketamine-proof-list span {
+  font-size: 15px;
+  color: var(--ketamine-muted);
+}
+.ketamine-process {
+  background: linear-gradient(120deg, #eaf4ff, #d8eff2);
+}
+.ketamine-step-grid,
+.ketamine-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.ketamine-step {
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+.ketamine-step > span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  color: #7c3aed;
+  display: block;
+  margin-bottom: 15px;
+}
+.ketamine-step p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.ketamine-process .ketamine-actions {
+  justify-content: center;
+  margin-top: 34px;
+}
+.ketamine-price-card {
+  background: #f0f7ff;
+  padding: 38px;
+  border: 1px solid #cce0f7;
+  border-radius: 24px;
+  text-align: center;
+}
+.ketamine-page .ketamine-price {
+  color: var(--ketamine-ink);
+}
+.ketamine-price strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+.ketamine-course {
+  padding: 16px 0;
+  border-block: 1px solid #cce0f7;
+}
+.ketamine-course strong {
+  display: block;
+  font-size: 24px;
+  color: var(--ketamine-ink);
+}
+.ketamine-review {
+  margin: 0;
+  padding: 28px;
+  border: 1px solid var(--ketamine-line);
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.ketamine-review blockquote {
+  font-size: 15px;
+  color: var(--ketamine-muted);
+  margin-bottom: 24px;
+}
+.ketamine-review figcaption {
+  margin-top: auto;
+}
+.ketamine-review figcaption strong,
+.ketamine-review figcaption span {
+  display: block;
+}
+.ketamine-review figcaption span {
+  font-size: 12px;
+  color: var(--ketamine-muted);
+}
+.ketamine-faq-wrap {
+  max-width: 900px;
+}
+.ketamine-faq details {
+  border-bottom: 1px solid var(--ketamine-line);
+  padding: 20px 0;
+}
+.ketamine-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.ketamine-faq details p {
+  margin: 14px 0 8px;
+  font-size: 16px;
+}
+.ketamine-closing {
+  background: linear-gradient(110deg, #215cbe, #107d89);
+  color: white;
+}
+.ketamine-closing h2,
+.ketamine-closing p,
+.ketamine-closing .ketamine-eyebrow {
+  color: white;
+}
+.ketamine-closing-image {
+  max-width: 470px;
+}
+.ketamine-footer {
+  padding: 54px 0;
+  background: white;
+}
+.ketamine-footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.5fr;
+  gap: 32px;
+}
+.ketamine-footer h2 {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+.ketamine-footer a {
+  color: #285579;
+}
+.ketamine-footer a:hover {
+  text-decoration: underline;
+}
+.ketamine-footer address {
+  font-style: normal;
+  margin: 16px 0;
+}
+.ketamine-footer p,
+.ketamine-footer li,
+.ketamine-footer address {
+  font-size: 14px;
+}
+.ketamine-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.ketamine-footer li {
+  margin: 10px 0;
+}
+.ketamine-footer-phone {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ketamine-seal {
+  max-width: 150px;
+}
+.ketamine-mobile-actions {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .ketamine-nav {
+    gap: 16px;
+  }
+  .ketamine-header-inner {
+    gap: 16px;
+  }
+  .ketamine-header-cta {
+    padding-inline: 16px;
+    font-size: 13px;
+  }
+  .ketamine-logo {
+    width: 180px;
+  }
+}
+@media (max-width: 900px) {
+  .ketamine-nav {
+    display: none;
+  }
+  .ketamine-hero {
+    background-position: 60% center;
+  }
+  .ketamine-hero-copy {
+    max-width: 570px;
+  }
+  .ketamine-step-grid,
+  .ketamine-review-grid {
+    gap: 16px;
+  }
+  .ketamine-step,
+  .ketamine-review {
+    padding: 24px;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 90px;
+    scroll-padding-bottom: 100px;
+  }
+  .ketamine-container {
+    width: calc(100% - 40px);
+  }
+  .ketamine-header-inner {
+    min-height: 76px;
+  }
+  .ketamine-logo {
+    width: 165px;
+  }
+  .ketamine-header-cta {
+    display: none;
+  }
+  .ketamine-header-call {
+    display: block;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 0;
+  }
+  .ketamine-section {
+    padding: 56px 0;
+  }
+  .ketamine-hero {
+    background: #f0f7fb;
+  }
+  .ketamine-hero-copy {
+    padding: 38px 0 30px;
+    max-width: none;
+  }
+  .ketamine-page .ketamine-lead {
+    font-size: 20px;
+  }
+  .ketamine-hero-mobile {
+    display: block;
+  }
+  .ketamine-hero-mobile .gatsby-image-wrapper {
+    display: block;
+    max-height: 260px;
+  }
+  .ketamine-hero-mobile img {
+    object-position: center 35%;
+  }
+  .ketamine-hero .ketamine-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ketamine-trust-strip > div {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .ketamine-section-heading {
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  .ketamine-care-grid,
+  .ketamine-split,
+  .ketamine-pricing-grid,
+  .ketamine-step-grid,
+  .ketamine-review-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .ketamine-care-card,
+  .ketamine-price-card {
+    padding: 26px;
+  }
+  .ketamine-care-card .ketamine-button {
+    align-self: stretch;
+  }
+  .ketamine-closing-image {
+    max-width: 330px;
+    margin-inline: auto;
+  }
+  .ketamine-footer {
+    padding: 40px 0 calc(110px + env(safe-area-inset-bottom));
+  }
+  .ketamine-footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .ketamine-mobile-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 76px;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 35;
+    background: #fffffffa;
+    border-top: 1px solid var(--ketamine-line);
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 20px #152b4010;
+  }
+  .ketamine-mobile-actions .ketamine-button {
+    font-size: 13px;
+    padding-inline: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ketamine-button {
+    transition: none;
+  }
+}
+
+/* Locations and trust links follow the same landing-page card and type scale. */
+.ketamine-location-heading {
+  max-width: 730px;
+  margin-bottom: 30px;
+}
+.ketamine-location-heading h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.85rem);
+}
+.ketamine-location-heading p {
+  font-size: 16px;
+  color: var(--ketamine-muted);
+  margin-bottom: 16px;
+}
+.ketamine-location-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-bottom: 48px;
+}
+.ketamine-location-card {
+  border: 1px solid var(--ketamine-line);
+  border-radius: 22px;
+  overflow: hidden;
+  background: #f4f8fb;
+}
+.ketamine-location-copy {
+  padding: 26px;
+}
+.ketamine-location-copy h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+}
+.ketamine-location-copy address {
+  margin: 12px 0;
+}
+.ketamine-location-copy > a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ketamine-location-card iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  display: block;
+}
+.ketamine-footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1fr;
+  gap: 36px;
+  border-top: 1px solid var(--ketamine-line);
+  padding-top: 36px;
+}
+.ketamine-certification img {
+  display: block;
+}
+.ketamine-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ketamine-social-links a {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ketamine-line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ketamine-social-links a:hover {
+  background: #eaf4ff;
+}
+.ketamine-social-links img {
+  opacity: 0.75;
+}
+.ketamine-psychology {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin-top: 18px;
+}
+@media (max-width: 767px) {
+  .ketamine-location-grid,
+  .ketamine-footer-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Exact footer blue verified from the live main website stylesheet. */
+.ketamine-footer {
+  background: #006db8;
+  color: #fff;
+}
+.ketamine-footer h2,
+.ketamine-footer a {
+  color: #fff;
+}
+.ketamine-footer .ketamine-location-heading p {
+  color: #f0f6fc;
+}
+.ketamine-footer a:hover {
+  color: #fff;
+}
+.ketamine-footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+.ketamine-footer-logo {
+  max-width: 220px;
+  margin-bottom: 22px;
+  filter: brightness(0) invert(1);
+}
+.ketamine-location-card {
+  color: var(--ketamine-ink);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.ketamine-footer .ketamine-location-card a {
+  color: #174a85;
+}
+.ketamine-footer .ketamine-location-card a:hover {
+  color: #103661;
+}
+.ketamine-social-links a {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.ketamine-social-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.ketamine-social-links img,
+.ketamine-psychology img {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+.ketamine-certification > a {
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+}
+.ketamine-footer a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+.ketamine-footer .ketamine-location-card a:focus-visible {
+  outline-color: #174a85;
+}
+
+/* Locations are a separate light section above the blue footer. */
+.ketamine-locations {
+  padding: 64px 0;
+  background: #fff;
+  color: var(--ketamine-ink);
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.ketamine-locations h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+  margin-bottom: 24px;
+}
+.ketamine-locations .ketamine-location-grid {
+  margin-bottom: 0;
+}
+.ketamine-locations .ketamine-location-card {
+  border-color: var(--ketamine-line);
+}
+.ketamine-locations address {
+  font-style: normal;
+  font-size: 14px;
+}
+.ketamine-locations a {
+  color: #174a85;
+}
+.ketamine-locations a:hover {
+  color: #103661;
+  text-decoration: underline;
+}
+.ketamine-locations a:focus-visible {
+  outline: 3px solid #174a85;
+  outline-offset: 4px;
+}
+.ketamine-footer-bottom {
+  padding-top: 0;
+  border-top: 0;
+}
+@media (max-width: 767px) {
+  .ketamine-locations {
+    padding: 48px 0;
+  }
+}
