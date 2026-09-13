@@ -6,7 +6,9 @@ const Layout2 = ({ children }) => {
   return (
     <>
       <HeaderKetamine />
-       <main className="text-gray-900">{children}</main>
+      <main id="main-content" className="text-gray-900" tabIndex={-1}>
+        {children}
+      </main>
       <FooterKetamine />
     </>
   );

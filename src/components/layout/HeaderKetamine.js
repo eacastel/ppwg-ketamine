@@ -1,37 +1,42 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { StaticImage } from 'gatsby-plugin-image';
-import Button from '../Button';
-
-const Header = () => (
-  <header className="sticky top-0 bg-white shadow z-20">
-    <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-6">
-      <div className="flex items-center text-2xl ">
-        <div className=""><a href="#top">
-          <StaticImage src="../../images/ppwg-logo.png" alt="Pacific Pain & Wellness Group Logo" /></a>
-        </div>
-      </div>
-      <div className="flex mt-4 sm:mt-0 font-bold">
-
-        <AnchorLink className="px-2 md:px-6" href="#approach">
-          Approach
-        </AnchorLink>
-        <AnchorLink className="px-2 md:px-6" href="#process">
-          Process
-        </AnchorLink>
-        <AnchorLink className="px-2 md:px-6" href="#testimonials">
-          Testimonials
-        </AnchorLink>
-        <AnchorLink className="px-2 md:px-6" href="#contact">
-          Contact
-        </AnchorLink>
-
-      </div>
-      <div className="hidden md:block">
-        <Button className="text-sm font-bold">Request&nbsp;a&nbsp;Private&nbsp;Consultation</Button>
-      </div>
+import ButtonKetamine from '../ButtonKetamine';
+const HeaderKetamine = () => (
+  <header className="ketamine-header">
+    <a className="ketamine-skip" href="#main-content">
+      Skip to content
+    </a>
+    <div className="ketamine-container ketamine-header-inner">
+      <a
+        href="#top"
+        className="ketamine-logo"
+        aria-label="Pacific Pain and Wellness Group, top of page"
+      >
+        <StaticImage
+          src="../../images/ppwg-logo.png"
+          alt="Pacific Pain & Wellness Group"
+          width={220}
+          placeholder="none"
+        />
+      </a>
+      <nav className="ketamine-nav" aria-label="Ketamine care">
+        <a href="#ketamine-care">Our care</a>
+        <a href="#process">What to expect</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <ButtonKetamine section="header" className="ketamine-header-cta">
+        Request Consultation
+      </ButtonKetamine>
+      <a
+        href="tel:+13104377399"
+        className="ketamine-header-call"
+        data-cta="call-cta"
+        data-section="header"
+      >
+        Call our team
+      </a>
     </div>
   </header>
 );
-
-export default Header;
+export default HeaderKetamine;

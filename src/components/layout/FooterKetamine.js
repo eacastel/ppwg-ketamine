@@ -1,45 +1,57 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-
-const FooterKetamine = () => {
-  return (
-    <footer id="contact" className="container mx-auto py-8 px-3 mt-10 mb-20 text-gray-800">
-      <div className="flex -mx-3">
-        <div className="flex-1 px-3">
-          <h2 className="text-lg font-semibold">Call Us / Our Location</h2>
-          <p className="mt-5">
-            <a href="tel:+13104377399" rel="nofollow">(310) 437-7399</a>
-          </p>
-          <p className="mt-5">
-              <a href="https://maps.app.goo.gl/bsW8pXVBxdGA8ZAYA" target="_blank">23150 Crenshaw Blvd #100<br />
-                Torrance, CA 90505</a>
- </p>
-        </div>
-        <div className="flex-1 px-3">
-          <h2 className="text-lg font-semibold">Important Links</h2>
-          <ul className="mt-4 leading-loose">
-            <li>
-              <a href="https://pacificpaingroup.com/"  target="_blank">Pacific Pain & Wellness Group</a>
-            </li>
-            <li>
-              <a href="https://pacificpaingroup.com/terms-of-use"  target="_blank">Terms of Use</a>
-            </li>
-            <li>
-              <a href="https://pacificpaingroup.com/privacy-policy"  target="_blank">Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-        <div className="flex-1 px-3">
-          <ul className="mt-4 leading-loose relative">
-            <li>
-            <StaticImage src="../../images/legit-script-seal.png" alt="LegitScript certification logo" className="absolute top-0 right-0 "  />
-            
-            </li>
-          </ul>
-        </div>
+const FooterKetamine = () => (
+  <footer id="location" className="ketamine-footer">
+    <div className="ketamine-container ketamine-footer-grid">
+      <div>
+        <h2>Visit our Torrance clinic</h2>
+        <a
+          href="tel:+13104377399"
+          className="ketamine-footer-phone"
+          data-cta="call-cta"
+          data-section="footer"
+        >
+          (310) 437-7399
+        </a>
+        <address>
+          <a
+            href="https://maps.app.goo.gl/bsW8pXVBxdGA8ZAYA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            23150 Crenshaw Blvd, Suite 100
+            <br />
+            Torrance, CA 90505
+          </a>
+        </address>
+        <p>
+          Serving the South Bay, Long Beach
+          <br />
+          and Greater Los Angeles.
+        </p>
       </div>
-    </footer>
-  );
-};
-
+      <div>
+        <h2>Pacific Pain & Wellness Group</h2>
+        <ul>
+          <li>
+            <a href="https://pacificpaingroup.com/">Visit our main website</a>
+          </li>
+          <li>
+            <a href="https://pacificpaingroup.com/terms-of-use">Terms of Use</a>
+          </li>
+          <li>
+            <a href="https://pacificpaingroup.com/privacy-policy">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div className="ketamine-seal">
+        <StaticImage
+          src="../../images/legit-script-seal.png"
+          alt="LegitScript certification logo"
+          width={150}
+        />
+      </div>
+    </div>
+  </footer>
+);
 export default FooterKetamine;
