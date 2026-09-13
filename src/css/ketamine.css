@@ -726,9 +726,8 @@ html {
 }
 .ketamine-certification > a {
   display: inline-block;
-  padding: 12px 18px;
-  border-radius: 14px;
-  background: #fff;
+  padding: 0;
+  background: transparent;
 }
 .ketamine-footer a:focus-visible {
   outline: 3px solid #fff;
@@ -736,4 +735,51 @@ html {
 }
 .ketamine-footer .ketamine-location-card a:focus-visible {
   outline-color: #174a85;
+}
+
+/* Locations are a separate light section above the blue footer. */
+.ketamine-locations {
+  padding: 64px 0;
+  background: #fff;
+  color: var(--ketamine-ink);
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.ketamine-locations h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+  margin-bottom: 24px;
+}
+.ketamine-locations .ketamine-location-grid {
+  margin-bottom: 0;
+}
+.ketamine-locations .ketamine-location-card {
+  border-color: var(--ketamine-line);
+}
+.ketamine-locations address {
+  font-style: normal;
+  font-size: 14px;
+}
+.ketamine-locations a {
+  color: #174a85;
+}
+.ketamine-locations a:hover {
+  color: #103661;
+  text-decoration: underline;
+}
+.ketamine-locations a:focus-visible {
+  outline: 3px solid #174a85;
+  outline-offset: 4px;
+}
+.ketamine-footer-bottom {
+  padding-top: 0;
+  border-top: 0;
+}
+@media (max-width: 767px) {
+  .ketamine-locations {
+    padding: 48px 0;
+  }
 }

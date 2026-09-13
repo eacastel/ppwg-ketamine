@@ -22,11 +22,11 @@ const profiles = [
   ['Instagram', 'instagram', 'https://www.instagram.com/pacificpaingroup/'],
   ['LinkedIn', 'linkedin', 'https://www.linkedin.com/company/pacific-pain-and-wellness-group/'],
 ];
-const FooterKetamine = () => (
-  <footer id="location" className="ketamine-footer">
+export const KetamineLocations = () => (
+  <section id="location" className="ketamine-locations" aria-labelledby="location-title">
     <div className="ketamine-container">
       <div className="ketamine-location-heading">
-        <h2>Our South Bay Locations</h2>
+        <h2 id="location-title">Our South Bay Locations</h2>
         <p>
           Visit Pacific Pain & Wellness Group in Torrance or Manhattan Beach. Our team will confirm
           the location for your ketamine appointment.
@@ -76,6 +76,13 @@ const FooterKetamine = () => (
           );
         })}
       </div>
+    </div>
+  </section>
+);
+
+const FooterKetamine = () => (
+  <footer id="site-footer" className="ketamine-footer">
+    <div className="ketamine-container">
       <div className="ketamine-footer-bottom">
         <div>
           <StaticImage

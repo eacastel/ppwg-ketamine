@@ -119,7 +119,7 @@ const WebSocket = require('ws');
     await evaluate("document.querySelector('summary').click()");
     assert.equal(await evaluate("document.querySelector('details').open"), true);
     const footer = await evaluate(
-      `({maps:[...document.querySelectorAll('#location iframe')].map(e=>({title:e.title,src:e.src})),profiles:document.querySelectorAll('#location [data-cta="profile-cta"]').length,trust:document.querySelector('#location [data-cta="trust-cta"]').href,unscoped:[...document.querySelectorAll('[data-cta]')].filter(e=>e.dataset.service!=='ketamine').length})`,
+      `({maps:[...document.querySelectorAll('#location iframe')].map(e=>({title:e.title,src:e.src})),profiles:document.querySelectorAll('#site-footer [data-cta="profile-cta"]').length,trust:document.querySelector('#site-footer [data-cta="trust-cta"]').href,unscoped:[...document.querySelectorAll('[data-cta]')].filter(e=>e.dataset.service!=='ketamine').length})`,
     );
     assert.equal(footer.maps.length, 2);
     assert.ok(
