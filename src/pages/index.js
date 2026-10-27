@@ -20,8 +20,12 @@ const Actions = ({ section, light = false }) => (
 );
 const faqs = [
   [
+    'What will the assessment tell me?',
+    'The private assessment helps you explore our in-clinic program, your preferences and your next step. It does not provide a diagnosis or establish medical eligibility. You can choose whether to request follow-up from our team.',
+  ],
+  [
     'What does a ketamine consultation involve?',
-    'Start with a private contact request or a call. Our team will explain scheduling, costs and what to expect at a clinical evaluation. A clinician will review your treatment history and whether ketamine may be appropriate for you.',
+    'Start with the private assessment or call our team. Our team will explain scheduling, costs and what to expect at a clinical evaluation. A clinician will review your treatment history and whether ketamine may be appropriate for you.',
   ],
   [
     'Do you offer ketamine for mental health and for pain?',
@@ -33,11 +37,11 @@ const faqs = [
   ],
   [
     'Do you accept insurance for ketamine treatment?',
-    'Our ketamine treatment is self-pay. Health insurance is not accepted for this service. Please speak with our team about treatment costs before scheduling.',
+    'Ketamine treatment at Pacific Pain & Wellness Group is self-pay and is not covered by insurance. Please speak with our team about treatment costs before scheduling.',
   ],
   [
     'Can I visit from Long Beach or elsewhere in Los Angeles?',
-    'Yes. Our clinic is in Torrance at 23150 Crenshaw Blvd, Suite 100. We welcome patients from the South Bay, Long Beach and Greater Los Angeles. PPWG also has a Manhattan Beach office. Our team will confirm the location for your ketamine appointment.',
+    'Yes. Our clinic is in Torrance at 23150 Crenshaw Blvd, Suite 100. We welcome patients from the South Bay, Long Beach and Greater Los Angeles. Pacific Pain & Wellness Group also has a Manhattan Beach office. Our team will confirm the location for your ketamine appointment.',
   ],
   [
     'What happens after I send a request?',
@@ -66,7 +70,7 @@ const IndexPage = () => (
             </p>
             <Actions section="hero" />
             <p className="ketamine-note">
-              Send a private contact request. Our team will follow up to discuss a consultation.
+              Answer a few short questions to explore your options. Request follow-up when you’re ready.
             </p>
             <a href="#pricing" className="ketamine-price-summary">
               $650 per session <span>· Five-session minimum: $3,250</span>
@@ -178,26 +182,26 @@ const IndexPage = () => (
           <div className="ketamine-section-heading">
             <p className="ketamine-eyebrow">A clear next step</p>
             <h2 id="process-title">
-              From a conversation
+              From your first questions
               <br />
-              to a treatment plan
+              to your next step
             </h2>
           </div>
           <div className="ketamine-step-grid">
             <article className="ketamine-step">
               <span aria-hidden="true">01</span>
-              <h3>Request a consultation</h3>
+              <h3>Take the assessment</h3>
               <p>
-                Send your contact details privately or call our ketamine team. You do not need to
-                provide medical details in the contact form.
+                Explore your goals, preferences and practical next steps in a short, private
+                assessment. Choose whether you would like our team to follow up.
               </p>
             </article>
             <article className="ketamine-step">
               <span aria-hidden="true">02</span>
               <h3>Speak with our team</h3>
               <p>
-                Discuss scheduling, pricing and what to expect at your evaluation. Our team will
-                help you understand your next steps.
+                If you request follow-up, our team will discuss scheduling, pricing and what to
+                expect at a clinical evaluation.
               </p>
             </article>
             <article className="ketamine-step">
@@ -218,8 +222,8 @@ const IndexPage = () => (
             <p className="ketamine-eyebrow">Know what to expect</p>
             <h2 id="pricing-title">Ketamine Treatment Cost</h2>
             <p>
-              Clear pricing helps you plan your next step. Ketamine treatment at our clinic is
-              self-pay; health insurance is not accepted for this service.
+              Clear pricing helps you plan your next step. Ketamine treatment at Pacific Pain
+              & Wellness Group is self-pay and is not covered by insurance.
             </p>
             <p>
               Our team will explain the applicable treatment plan and confirm your total before you
@@ -234,7 +238,7 @@ const IndexPage = () => (
               Five-session minimum <strong>$3,250</strong>
             </p>
             <ButtonKetamine section="pricing" />
-            <p className="ketamine-note">A contact request does not commit you to treatment.</p>
+            <p className="ketamine-note">Taking the assessment does not commit you to treatment.</p>
           </div>
         </div>
       </section>
@@ -246,7 +250,7 @@ const IndexPage = () => (
         <div className="ketamine-container">
           <div className="ketamine-section-heading">
             <p className="ketamine-eyebrow">The patient experience</p>
-            <h2 id="testimonial-title">What patients say about PPWG</h2>
+            <h2 id="testimonial-title">What patients say about Pacific Pain & Wellness Group</h2>
             <p>These reviews describe individual experiences at our practice.</p>
           </div>
           <div className="ketamine-review-grid">
@@ -317,11 +321,11 @@ const IndexPage = () => (
               Ketamine Team
             </h2>
             <p>
-              Explore ketamine care for mental health or pain. Our team can help you understand your
-              options and arrange a consultation.
+              Take the private assessment to explore ketamine care for mental health or pain.
+              You can request follow-up or call our team to discuss your next step.
             </p>
             <Actions section="closing" light />
-            <p className="ketamine-note">Private contact request · In-clinic care in Torrance</p>
+            <p className="ketamine-note">Private assessment · In-clinic care in Torrance</p>
           </div>
           <StaticImage
             src="../images/change-your-life-today-v3.png"
@@ -331,7 +335,7 @@ const IndexPage = () => (
         </div>
       </section>
       <nav className="ketamine-mobile-actions" aria-label="Contact our ketamine team">
-        <ButtonKetamine section="mobile-bar">Request Consultation</ButtonKetamine>
+        <ButtonKetamine section="mobile-bar">Take the assessment</ButtonKetamine>
         <a
           href="tel:+13104377399"
           className="ketamine-button ketamine-button--outline"
@@ -348,13 +352,13 @@ const IndexPage = () => (
 );
 const PageMetadata = () => (
   <Helmet htmlAttributes={{ lang: 'en' }}>
-    <title>Ketamine Therapy in Torrance | Pacific Pain & Wellness</title>
+    <title>Ketamine Therapy in Torrance | Pacific Pain & Wellness Group</title>
     <meta
       name="description"
-      content="Explore physician-led ketamine therapy for mental health and pain in Torrance. Serving South Bay and Long Beach. Request a private consultation."
+      content="Explore physician-led ketamine therapy for mental health and pain in Torrance. Serving South Bay and Long Beach. Take the private assessment."
     />
     <link rel="canonical" href="https://ketamine.pacificpaingroup.com/" />
-    <meta property="og:title" content="Ketamine Therapy in Torrance | Pacific Pain & Wellness" />
+    <meta property="og:title" content="Ketamine Therapy in Torrance | Pacific Pain & Wellness Group" />
     <meta
       property="og:description"
       content="Physician-led ketamine treatment for mental health and pain in Torrance, serving South Bay and Long Beach."

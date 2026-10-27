@@ -2,8 +2,10 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
 const WebSocket = require('ws');
+const debugPort = process.env.PPWG_CHROME_DEBUG_PORT || '9334';
+const landingUrl = process.env.PPWG_LANDING_URL || 'http://127.0.0.1:4174/';
 (async () => {
-  const targets = await (await fetch('http://127.0.0.1:9334/json')).json();
+  const targets = await (await fetch(`http://127.0.0.1:${debugPort}/json`)).json();
   const ws = new WebSocket(targets.find((t) => t.type === 'page').webSocketDebuggerUrl);
   await new Promise((resolve) => ws.once('open', resolve));
   let id = 0;
@@ -42,7 +44,7 @@ const WebSocket = require('ws');
         '*doubleclick.net*',
       ],
     });
-    await call('Page.navigate', { url: 'http://127.0.0.1:4174/' });
+    await call('Page.navigate', { url: landingUrl });
     for (let n = 0; n < 60; n++) {
       if (
         await evaluate(
@@ -54,7 +56,7 @@ const WebSocket = require('ws');
     }
     await evaluate('document.fonts.ready.then(() => true)');
     const structure = await evaluate(
-      `({title:document.title,h1:document.querySelectorAll('h1').length,ids:[...document.querySelectorAll('[id]')].map(e=>e.id),brokenAnchors:[...document.querySelectorAll('a[href^="#"]')].filter(a=>!document.getElementById(a.hash.slice(1))).map(a=>a.hash),ctas:[...document.querySelectorAll('[data-cta="consultation-cta"]')].map(a=>({href:a.href,target:a.target,section:a.dataset.section})),canonical:document.querySelector('link[rel="canonical"]').href})`,
+      `({title:document.title,h1:document.querySelectorAll('h1').length,ids:[...document.querySelectorAll('[id]')].map(e=>e.id),brokenAnchors:[...document.querySelectorAll('a[href^="#"]')].filter(a=>!document.getElementById(a.hash.slice(1))).map(a=>a.hash),ctas:[...document.querySelectorAll('[data-cta="assessment-cta"]')].map(a=>({href:a.href,target:a.target,section:a.dataset.section,label:a.textContent.trim(),referrerPolicy:a.referrerPolicy})),canonical:document.querySelector('link[rel="canonical"]').href})`,
     );
     assert.equal(structure.h1, 1);
     assert.equal(new Set(structure.ids).size, structure.ids.length);
@@ -65,7 +67,9 @@ const WebSocket = require('ws');
     assert.ok(
       structure.ctas.every(
         (a) =>
-          a.href === 'https://intake.pacificpaingroup.com/private-consultation-request' &&
+          a.href === 'https://intake.pacificpaingroup.com/ketamine-assessment' &&
+          a.label === 'Take the assessment' &&
+          a.referrerPolicy === 'no-referrer' &&
           !a.target &&
           a.section !== 'generic',
       ),
@@ -134,7 +138,7 @@ const WebSocket = require('ws');
     );
     assert.deepEqual(errors, []);
     console.log(
-      'PASS: unique IDs, working anchors, same-tab consultation routes, metadata, FAQ interaction, no runtime exceptions. No form submissions.',
+      'PASS: unique IDs, working anchors, same-tab assessment routes, metadata, FAQ interaction, no runtime exceptions. No form submissions.',
     );
   } finally {
     ws.close();

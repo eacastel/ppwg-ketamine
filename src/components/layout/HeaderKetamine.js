@@ -26,7 +26,7 @@ const HeaderKetamine = () => (
         <a href="#faq">FAQs</a>
       </nav>
       <ButtonKetamine section="header" className="ketamine-header-cta">
-        Request Consultation
+        Take the assessment
       </ButtonKetamine>
       <a
         href="tel:+13104377399"

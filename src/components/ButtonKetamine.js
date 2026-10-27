@@ -1,17 +1,18 @@
 import React from 'react';
-export const CONSULTATION_URL = 'https://intake.pacificpaingroup.com/private-consultation-request';
+export const ASSESSMENT_URL = 'https://intake.pacificpaingroup.com/ketamine-assessment';
 const ButtonKetamine = ({
-  children = 'Request a Ketamine Consultation',
+  children = 'Take the assessment',
   className = '',
   variant = 'primary',
-  href = CONSULTATION_URL,
+  href = ASSESSMENT_URL,
   section = 'generic',
 }) => (
   <a
     href={href}
+    referrerPolicy="no-referrer"
     className={`ketamine-button ketamine-button--${variant} ${className}`}
     data-service="ketamine"
-    data-cta="consultation-cta"
+    data-cta="assessment-cta"
     data-section={section}
   >
     {children}
