@@ -70,7 +70,7 @@ const IndexPage = () => (
             </p>
             <Actions section="hero" />
             <p className="ketamine-note">
-              Answer a few short questions to explore your options. Request follow-up when you’re ready.
+              5 short questions. Private. See your next step before sharing contact details.
             </p>
             <a href="#pricing" className="ketamine-price-summary">
               $650 per session <span>· Five-session minimum: $3,250</span>
