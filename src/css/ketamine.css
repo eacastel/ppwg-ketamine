@@ -201,6 +201,43 @@ html {
   line-height: 1.5;
   color: var(--ketamine-ink);
 }
+.ketamine-clinician {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 555px;
+  margin: 24px 0;
+}
+.ketamine-clinician-photo {
+  flex: 0 0 96px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.ketamine-clinician strong,
+.ketamine-clinician span {
+  display: block;
+}
+.ketamine-clinician strong {
+  color: var(--ketamine-ink);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+.ketamine-clinician span {
+  color: var(--ketamine-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.ketamine-clinician span + span {
+  margin-top: 5px;
+}
+.ketamine-page .ketamine-reassurance {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 12px 0 0;
+}
 .ketamine-price-summary {
   display: block;
   color: var(--ketamine-ink);
