@@ -76,7 +76,7 @@ const IndexPage = () => (
               <div>
                 <strong>Dr. Kartik Ananth, MD, MBA</strong>
                 <span>Board-certified in psychiatry and pain management</span>
-                <span>Experienced, physician-led care in Torrance.</span>
+                <span>15+ years of physician experience with ketamine</span>
               </div>
             </div>
             <Actions section="hero" />
