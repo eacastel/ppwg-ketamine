@@ -64,10 +64,21 @@ const IndexPage = () => (
             <p className="ketamine-lead">
               Physician-led ketamine treatment for mental health and pain.
             </p>
-            <p>
-              Speak with our team about in-clinic ketamine therapy, what treatment involves, and
-              your next steps. Serving the South Bay, Long Beach and Greater Los Angeles.
-            </p>
+            <div className="ketamine-clinician">
+              <StaticImage
+                src="../images/dr-kartik-ananth.jpg"
+                alt="Dr. Kartik Ananth"
+                width={96}
+                height={96}
+                loading="eager"
+                className="ketamine-clinician-photo"
+              />
+              <div>
+                <strong>Dr. Kartik Ananth, MD, MBA</strong>
+                <span>Board-certified in psychiatry and pain management</span>
+                <span>Experienced, physician-led care in Torrance.</span>
+              </div>
+            </div>
             <Actions section="hero" />
             <p className="ketamine-note">
               5 short questions. Private. See your next step before sharing contact details.
@@ -76,6 +87,9 @@ const IndexPage = () => (
               $650 per session <span>· Five-session minimum: $3,250</span>
               <small>Self-pay treatment · View pricing details →</small>
             </a>
+            <p className="ketamine-reassurance">
+              No payment or treatment commitment is required to request follow-up.
+            </p>
           </div>
         </div>
         <div className="ketamine-hero-mobile">
