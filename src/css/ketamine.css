@@ -256,6 +256,25 @@ html {
   font-weight: 400;
   margin-top: 4px;
 }
+.ketamine-interest-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 22px;
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ketamine-interest-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #174a85;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.ketamine-interest-links a:hover {
+  color: #103661;
+}
 .ketamine-hero-mobile {
   display: none;
 }
