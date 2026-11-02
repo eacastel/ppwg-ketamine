@@ -18,6 +18,19 @@ const Actions = ({ section, light = false }) => (
     </a>
   </div>
 );
+const PrivateFollowUp = () => (
+  <p className="ketamine-note">
+    Prefer to speak with our team first?{' '}
+    <a
+      href="https://intake.pacificpaingroup.com/private-consultation-request"
+      rel="noreferrer"
+      referrerPolicy="no-referrer"
+      style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '0.2em' }}
+    >
+      Request a private follow-up
+    </a>
+  </p>
+);
 const faqs = [
   [
     'What will the assessment tell me?',
@@ -83,6 +96,7 @@ const IndexPage = () => (
             <p className="ketamine-note">
               5 short questions. Private. See your next step before sharing contact details.
             </p>
+            <PrivateFollowUp />
             <a href="#pricing" className="ketamine-price-summary">
               $650 per session <span>· Five-session minimum: $3,250</span>
               <small>Self-pay treatment · View pricing details →</small>
@@ -340,6 +354,7 @@ const IndexPage = () => (
             </p>
             <Actions section="closing" light />
             <p className="ketamine-note">Private assessment · In-clinic care in Torrance</p>
+            <PrivateFollowUp />
           </div>
           <StaticImage
             src="../images/change-your-life-today-v3.png"
