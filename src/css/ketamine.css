@@ -2,7 +2,10 @@
 :root {
   --ketamine-ink: #152b40;
   --ketamine-muted: #4b6072;
-  --ketamine-blue: #2563eb;
+  --ketamine-blue: #006db8;
+  --ketamine-blue-dark: #00548d;
+  --ketamine-blue-soft: #e4f4ff;
+  --ketamine-focus: var(--ketamine-blue-dark);
   --ketamine-teal: #0f766e;
   --ketamine-line: #dce7ee;
 }
@@ -138,24 +141,24 @@ html {
 }
 .ketamine-button--primary:hover {
   color: #fff;
-  background: #1d4ed8;
+  background: var(--ketamine-blue-dark);
 }
 .ketamine-button--outline {
-  color: #1d4ed8;
-  border-color: #8faed7;
+  color: var(--ketamine-blue);
+  border-color: var(--ketamine-blue);
   background: #fff;
 }
 .ketamine-button--outline:hover {
-  color: #1e40af;
-  background: #eff6ff;
+  color: var(--ketamine-blue-dark);
+  background: var(--ketamine-blue-soft);
 }
 .ketamine-button--secondary {
   background: #fff;
-  color: #174a85;
+  color: var(--ketamine-blue-dark);
 }
 .ketamine-button--secondary:hover {
-  background: #eaf4ff;
-  color: #174a85;
+  background: var(--ketamine-blue-soft);
+  color: var(--ketamine-blue-dark);
 }
 .ketamine-button--light-outline {
   background: transparent;
@@ -170,7 +173,7 @@ html {
 .ketamine-header a:focus-visible,
 .ketamine-footer a:focus-visible,
 .ketamine-page summary:focus-visible {
-  outline: 3px solid #9333ea;
+  outline: 3px solid var(--ketamine-focus);
   outline-offset: 4px;
 }
 .ketamine-actions {
@@ -248,7 +251,7 @@ html {
   font-weight: 700;
 }
 .ketamine-price-summary:hover {
-  color: #1d4ed8;
+  color: var(--ketamine-blue);
 }
 .ketamine-price-summary small {
   display: block;
@@ -268,12 +271,12 @@ html {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  color: #174a85;
+  color: var(--ketamine-blue-dark);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
 .ketamine-interest-links a:hover {
-  color: #103661;
+  color: var(--ketamine-blue-dark);
 }
 .ketamine-hero-mobile {
   display: none;
@@ -349,7 +352,7 @@ html {
   color: var(--ketamine-muted);
 }
 .ketamine-process {
-  background: linear-gradient(120deg, #eaf4ff, #d8eff2);
+  background: linear-gradient(120deg, var(--ketamine-blue-soft), #d8eff2);
 }
 .ketamine-step-grid,
 .ketamine-review-grid {
@@ -444,6 +447,7 @@ html {
   font-size: 16px;
 }
 .ketamine-closing {
+  --ketamine-focus: #fff;
   background: linear-gradient(110deg, #215cbe, #107d89);
   color: white;
 }
@@ -553,7 +557,7 @@ html {
   }
   .ketamine-header-call {
     display: block;
-    color: #1d4ed8;
+    color: var(--ketamine-blue);
     font-size: 14px;
     font-weight: 700;
     padding: 12px 0;
@@ -718,7 +722,7 @@ html {
   justify-content: center;
 }
 .ketamine-social-links a:hover {
-  background: #eaf4ff;
+  background: var(--ketamine-blue-soft);
 }
 .ketamine-social-links img {
   opacity: 0.75;
@@ -764,10 +768,10 @@ html {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .ketamine-footer .ketamine-location-card a {
-  color: #174a85;
+  color: var(--ketamine-blue-dark);
 }
 .ketamine-footer .ketamine-location-card a:hover {
-  color: #103661;
+  color: var(--ketamine-blue-dark);
 }
 .ketamine-social-links a {
   border-color: rgba(255, 255, 255, 0.55);
@@ -790,7 +794,7 @@ html {
   outline-offset: 4px;
 }
 .ketamine-footer .ketamine-location-card a:focus-visible {
-  outline-color: #174a85;
+  outline-color: var(--ketamine-blue-dark);
 }
 
 /* Locations are a separate light section above the blue footer. */
@@ -820,14 +824,14 @@ html {
   font-size: 14px;
 }
 .ketamine-locations a {
-  color: #174a85;
+  color: var(--ketamine-blue-dark);
 }
 .ketamine-locations a:hover {
-  color: #103661;
+  color: var(--ketamine-blue-dark);
   text-decoration: underline;
 }
 .ketamine-locations a:focus-visible {
-  outline: 3px solid #174a85;
+  outline: 3px solid var(--ketamine-blue-dark);
   outline-offset: 4px;
 }
 .ketamine-footer-bottom {

@@ -4,9 +4,20 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Layout2 from '../components/layout/Layout2';
 import ButtonKetamine from '../components/ButtonKetamine';
 
-const Actions = ({ section, light = false }) => (
+const Actions = ({
+  section,
+  light = false,
+  assessmentLabel = 'Take the assessment',
+  assessmentAriaLabel,
+}) => (
   <div className="ketamine-actions">
-    <ButtonKetamine section={section} variant={light ? 'secondary' : 'primary'} />
+    <ButtonKetamine
+      section={section}
+      variant={light ? 'secondary' : 'primary'}
+      ariaLabel={assessmentAriaLabel}
+    >
+      {assessmentLabel}
+    </ButtonKetamine>
     <a
       href="tel:+13104377399"
       className={`ketamine-button ketamine-button--${light ? 'light-outline' : 'outline'}`}
@@ -89,7 +100,7 @@ const IndexPage = () => (
                 <span>15+ years of physician experience with ketamine</span>
               </div>
             </div>
-            <Actions section="hero" />
+            <Actions section="hero" assessmentLabel="Take the private assessment" />
             <p className="ketamine-note">
               5 short questions. Private. See your next step before sharing contact details.
             </p>
@@ -146,7 +157,9 @@ const IndexPage = () => (
                 you understand whether an in-clinic ketamine consultation is an appropriate next
                 step.
               </p>
-              <ButtonKetamine section="care" />
+              <ButtonKetamine section="care" ariaLabel="Explore your options with the private assessment">
+                Explore your options
+              </ButtonKetamine>
             </article>
             <article className="ketamine-care-card" id="ketamine-for-pain">
               <span className="ketamine-card-label">Pain treatment</span>
@@ -156,7 +169,7 @@ const IndexPage = () => (
                 pain-management history, what an evaluation involves, and the in-clinic treatment
                 options that may be appropriate for you.
               </p>
-              <ButtonKetamine section="care" />
+              <ButtonKetamine section="care">Start your assessment</ButtonKetamine>
             </article>
           </div>
         </div>
@@ -242,7 +255,7 @@ const IndexPage = () => (
               </p>
             </article>
           </div>
-          <Actions section="process" />
+          <Actions section="process" assessmentLabel="Begin the assessment" />
         </div>
       </section>
       <section className="ketamine-section" id="pricing" aria-labelledby="pricing-title">
@@ -266,7 +279,7 @@ const IndexPage = () => (
             <p className="ketamine-course">
               Five-session minimum <strong>$3,250</strong>
             </p>
-            <ButtonKetamine section="pricing" />
+            <ButtonKetamine section="pricing">Start your private assessment</ButtonKetamine>
             <p className="ketamine-note">Taking the assessment does not commit you to treatment.</p>
           </div>
         </div>
@@ -353,7 +366,12 @@ const IndexPage = () => (
               Take the private assessment to explore ketamine care for mental health or pain.
               You can request follow-up or call our team to discuss your next step.
             </p>
-            <Actions section="closing" light />
+            <Actions
+              section="closing"
+              light
+              assessmentLabel="Explore your next step"
+              assessmentAriaLabel="Explore your next step with the private assessment"
+            />
             <p className="ketamine-note">Private assessment · In-clinic care in Torrance</p>
             <PrivateFollowUp />
           </div>
