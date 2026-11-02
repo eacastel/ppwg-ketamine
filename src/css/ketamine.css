@@ -5,6 +5,7 @@
   --ketamine-blue: #006db8;
   --ketamine-blue-dark: #00548d;
   --ketamine-blue-soft: #e4f4ff;
+  --ketamine-focus: var(--ketamine-blue-dark);
   --ketamine-teal: #0f766e;
   --ketamine-line: #dce7ee;
 }
@@ -172,7 +173,7 @@ html {
 .ketamine-header a:focus-visible,
 .ketamine-footer a:focus-visible,
 .ketamine-page summary:focus-visible {
-  outline: 3px solid var(--ketamine-blue-dark);
+  outline: 3px solid var(--ketamine-focus);
   outline-offset: 4px;
 }
 .ketamine-actions {
@@ -446,6 +447,7 @@ html {
   font-size: 16px;
 }
 .ketamine-closing {
+  --ketamine-focus: #fff;
   background: linear-gradient(110deg, #215cbe, #107d89);
   color: white;
 }
@@ -453,9 +455,6 @@ html {
 .ketamine-closing p,
 .ketamine-closing .ketamine-eyebrow {
   color: white;
-}
-.ketamine-closing a:focus-visible {
-  outline-color: #fff;
 }
 .ketamine-closing-image {
   max-width: 470px;
