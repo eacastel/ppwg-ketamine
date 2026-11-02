@@ -127,7 +127,7 @@ const FooterKetamine = () => (
           </a>
         </div>
         <div className="ketamine-profiles">
-          <h2>Connect with PPWG</h2>
+          <h2>Connect with us</h2>
           <div className="ketamine-social-links">
             {profiles.map(([name, key, href]) => (
               <a
@@ -135,7 +135,7 @@ const FooterKetamine = () => (
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Pacific Pain & Wellness on ${name}`}
+                aria-label={`Pacific Pain & Wellness Group on ${name}`}
                 title={name}
                 data-cta="profile-cta"
                 data-service="ketamine"
@@ -151,7 +151,7 @@ const FooterKetamine = () => (
             href="https://www.psychologytoday.com/profile/874181"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Pacific Pain & Wellness on Psychology Today"
+            aria-label="Pacific Pain & Wellness Group on Psychology Today"
             data-cta="profile-cta"
             data-service="ketamine"
             data-section="footer"
