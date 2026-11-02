@@ -3,12 +3,14 @@ export const ASSESSMENT_URL = 'https://intake.pacificpaingroup.com/ketamine-asse
 const ButtonKetamine = ({
   children = 'Take the assessment',
   className = '',
+  ariaLabel,
   variant = 'primary',
   href = ASSESSMENT_URL,
   section = 'generic',
 }) => (
   <a
     href={href}
+    aria-label={ariaLabel}
     referrerPolicy="no-referrer"
     className={`ketamine-button ketamine-button--${variant} ${className}`}
     data-service="ketamine"
