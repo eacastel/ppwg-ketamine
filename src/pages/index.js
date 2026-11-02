@@ -4,9 +4,18 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Layout2 from '../components/layout/Layout2';
 import ButtonKetamine from '../components/ButtonKetamine';
 
-const Actions = ({ section, light = false, assessmentLabel = 'Take the assessment' }) => (
+const Actions = ({
+  section,
+  light = false,
+  assessmentLabel = 'Take the assessment',
+  assessmentAriaLabel,
+}) => (
   <div className="ketamine-actions">
-    <ButtonKetamine section={section} variant={light ? 'secondary' : 'primary'}>
+    <ButtonKetamine
+      section={section}
+      variant={light ? 'secondary' : 'primary'}
+      ariaLabel={assessmentAriaLabel}
+    >
       {assessmentLabel}
     </ButtonKetamine>
     <a
@@ -357,7 +366,12 @@ const IndexPage = () => (
               Take the private assessment to explore ketamine care for mental health or pain.
               You can request follow-up or call our team to discuss your next step.
             </p>
-            <Actions section="closing" light assessmentLabel="Take your assessment" />
+            <Actions
+              section="closing"
+              light
+              assessmentLabel="Explore your next step"
+              assessmentAriaLabel="Explore your next step with the private assessment"
+            />
             <p className="ketamine-note">Private assessment · In-clinic care in Torrance</p>
             <PrivateFollowUp />
           </div>
