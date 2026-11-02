@@ -454,6 +454,9 @@ html {
 .ketamine-closing .ketamine-eyebrow {
   color: white;
 }
+.ketamine-closing a:focus-visible {
+  outline-color: #fff;
+}
 .ketamine-closing-image {
   max-width: 470px;
 }
