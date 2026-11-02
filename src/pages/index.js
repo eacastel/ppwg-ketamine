@@ -69,13 +69,10 @@ const IndexPage = () => (
         <div className="ketamine-container">
           <div className="ketamine-hero-copy">
             <p className="ketamine-eyebrow">Pacific Pain & Wellness Group · Torrance, CA</p>
-            <h1 id="hero-title">
-              Ketamine Therapy
-              <br />
-              in Torrance
-            </h1>
+            <h1 id="hero-title">Ketamine Infusion Therapy in Torrance</h1>
             <p className="ketamine-lead">
-              Physician-led ketamine treatment for mental health and pain.
+              Physician-led care for mental health and chronic pain, serving the South Bay,
+              Long Beach and Greater Los Angeles.
             </p>
             <div className="ketamine-clinician">
               <StaticImage
@@ -104,6 +101,10 @@ const IndexPage = () => (
             <p className="ketamine-reassurance">
               No payment or treatment commitment is required to request follow-up.
             </p>
+            <nav className="ketamine-interest-links" aria-label="Explore ketamine care">
+              <a href="#ketamine-for-mental-health">Ketamine for mental health</a>
+              <a href="#ketamine-for-pain">Ketamine for chronic pain</a>
+            </nav>
           </div>
         </div>
         <div className="ketamine-hero-mobile">
@@ -176,7 +177,7 @@ const IndexPage = () => (
             <h2 id="approach-title">
               Ketamine care with
               <br />
-              Pacific Pain & Wellness
+              Pacific Pain & Wellness Group
             </h2>
             <p>
               Our Torrance team has provided in-clinic ketamine care since 2015, bringing together
@@ -323,7 +324,7 @@ const IndexPage = () => (
         <div className="ketamine-container ketamine-faq-wrap">
           <div className="ketamine-section-heading">
             <p className="ketamine-eyebrow">Your questions, answered</p>
-            <h2 id="faq-title">About ketamine care at PPWG</h2>
+            <h2 id="faq-title">Your questions about ketamine care</h2>
           </div>
           <div className="ketamine-faq">
             {faqs.map(([question, answer]) => (
