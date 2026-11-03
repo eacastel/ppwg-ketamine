@@ -918,7 +918,7 @@ html {
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
   scrollbar-color: #bdcfde transparent;
-  padding: 4px 4px 12px;
+  padding: 4px 0 12px;
 }
 .ketamine-review-track .ketamine-review {
   flex: 0 0 calc((100% - 24px) / 2);
