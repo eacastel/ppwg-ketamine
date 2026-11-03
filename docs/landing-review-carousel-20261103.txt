@@ -1,0 +1,50 @@
+Landing review carousel and simplified treatment cards — 2026-11-03
+
+This update supersedes the earlier November 3 page order:
+hero -> four-review carousel -> blue trust banner -> mental-health/pain cards.
+Pricing remains in its full section farther down. No duplicate pricing summary,
+review heading or introductory "reasons to explore" block is displayed.
+
+Four independent five-star Google reviews were read in full from the public
+clinic profile. Each selected excerpt is at most 25 words and links directly
+to its original review. Google-generated short links returned HTTP 200 and
+resolved to the expected review IDs:
+Ali Adabzadeh
+https://maps.app.goo.gl/wwJbL7v6Qt61EkLKA
+Review ID: Ci9DQUlRQUNvZENodHljRjlvT2kxdFYyNXNObVZNVFMwNFlrcFpNbTgxWDJoVldFRRAB
+
+Sherrell Miller
+https://maps.app.goo.gl/o9DkC7hTPEGuqWdh7
+Review ID: Ci9DQUlRQUNvZENodHljRjlvT21reFdrNVNWVTlKVkZaTWEwRmxUbWhJUjJOSk5XYxAB
+
+Becquie Venus
+https://maps.app.goo.gl/QS6W9k9rvgWqapCP8
+Review ID: Ci9DQUlRQUNvZENodHljRjlvT25CZlRFMUZNMHhRWkV0UWEwMTRlRGxKVTFKeE1sRRAB
+
+Michael Wilson
+https://maps.app.goo.gl/TzsdqQfCwk1a2sFR7
+Review ID: Ci9DQUlRQUNvZENodHljRjlvT2xWbllWVnJaVXAwU2psUVRHd3daM1l5YkVNemFHYxAB
+
+The sources describe general care: treatment explanations, being listened to,
+respectful attention and the first-visit experience. No ketamine response or
+clinical benefit is inferred. The verified epidural/therapy outcome reviews
+were not repurposed as ketamine treatment results. The overall profile rating
+is not represented as 5.0; each star row is that selected review's rating.
+
+Carousel behavior: two cards on desktop; one on small screens; native swipe/
+horizontal scroll; previous/next controls; keyboard arrows/Home/End; disabled
+controls at bounds; reduced-motion support; no autoplay and no new dependency.
+Stars increased from 18px brown to 26px golden-orange (#F5A623).
+
+Treatment cards use direct headings and help-focused copy. The duplicated
+introductory paragraph and anchor navigation were removed. Existing treatment
+IDs remain. The mental-health assessment CTA now says "Take the assessment";
+its data-section/data-cta attributes and private destination are unchanged.
+
+No Ads/GA4/GTM settings, budgets or private forms changed. One closing private
+follow-up link and the full pricing section remain from PR 13.
+
+Sources and verification evidence:
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-reviews-20261103/google-expanded-review-cards.json
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-reviews-20261103/google-individual-review-links.json
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-reviews-20261103/google-review-permalink-check.json
