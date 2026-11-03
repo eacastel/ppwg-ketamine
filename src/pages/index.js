@@ -3,6 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout2 from '../components/layout/Layout2';
 import ButtonKetamine from '../components/ButtonKetamine';
+import ReviewCarousel from '../components/ReviewCarousel';
 
 const Actions = ({
   section,
@@ -91,6 +92,7 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+      <ReviewCarousel />
       <div className="ketamine-trust-strip">
         <div className="ketamine-container">
           <span>Ketamine care since 2015</span>
@@ -98,78 +100,26 @@ const IndexPage = () => (
           <span>Pain & mental-health expertise</span>
         </div>
       </div>
-      <section className="ketamine-reviews" id="testimonials" aria-label="Google reviews">
+      <section className="ketamine-section" id="ketamine-care" aria-label="Ketamine treatment options">
         <div className="ketamine-container">
-          <div className="ketamine-review-grid">
-            <figure className="ketamine-review">
-              <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
-              <blockquote>“I felt heard and respected throughout the visit.”</blockquote>
-              <figcaption>
-                <strong>Ali Adabzadeh</strong>
-                <span>Google review</span>
-              </figcaption>
-            </figure>
-            <figure className="ketamine-review">
-              <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
-              <blockquote>“He listened attentively to my concerns and provided feedback.”</blockquote>
-              <figcaption>
-                <strong>Becquie Venus</strong>
-                <span>Google review</span>
-              </figcaption>
-            </figure>
-          </div>
-          <p className="ketamine-review-context">
-            Selected five-star Google reviews about the practice’s care experience.
-          </p>
-          <a
-            href="https://www.google.com/maps/place/Pacific+Pain+%26+Wellness+Group/@33.815136,-118.3277559,17z/data=!3m1!5s0x80dd4ad8338045dd:0x6737e1241900dfac!4m8!3m7!1s0x80dd4aebf1a96c6d:0x4144c738391591e1!8m2!3d33.815136!4d-118.3277559!9m1!1b1!16s%2Fg%2F1pp2x6nh9?hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ketamine-google-reviews-link"
-          >
-            Read reviews on Google →
-          </a>
-        </div>
-      </section>
-      <section className="ketamine-section" id="ketamine-care" aria-labelledby="care-title">
-        <div className="ketamine-container">
-          <div className="ketamine-section-heading">
-            <p className="ketamine-eyebrow">Care built around your needs</p>
-            <h2 id="care-title">
-              Two reasons to explore ketamine.
-              <br />
-              One experienced team.
-            </h2>
-            <p>
-              Learn about ketamine treatment with a team that brings together mental-health and
-              pain-management expertise.
-            </p>
-          </div>
-          <nav className="ketamine-interest-links" aria-label="Explore ketamine care">
-            <a href="#ketamine-for-mental-health">Ketamine for mental health</a>
-            <a href="#ketamine-for-pain">Ketamine for chronic pain</a>
-          </nav>
           <div className="ketamine-care-grid">
             <article className="ketamine-care-card" id="ketamine-for-mental-health">
               <span className="ketamine-card-label">Mental-health treatment</span>
-              <h3>Ketamine for Mental Health</h3>
+              <h2>Ketamine for mental health</h2>
               <p>
-                Considering ketamine therapy for depression or other mental-health concerns? Our
-                team can discuss your treatment history, explain the evaluation process, and help
-                you understand whether an in-clinic ketamine consultation is an appropriate next
-                step.
+                Get help understanding your ketamine treatment options for depression and other
+                mental-health concerns. Our team reviews your treatment history and explains
+                whether an in-clinic consultation is an appropriate next step.
               </p>
-              <ButtonKetamine section="care" ariaLabel="Explore your options with the private assessment">
-                Explore your options
-              </ButtonKetamine>
+              <ButtonKetamine section="care">Take the assessment</ButtonKetamine>
             </article>
             <article className="ketamine-care-card" id="ketamine-for-pain">
               <span className="ketamine-card-label">Pain treatment</span>
-              <h3>Ketamine for Pain</h3>
+              <h2>Ketamine for chronic pain</h2>
               <p>
-                Explore ketamine treatment for chronic pain with our Torrance team. Discuss your
-                pain-management history, what an evaluation involves, and the in-clinic treatment
-                options that may be appropriate for you.
+                Get help with persistent pain from our Torrance pain-management team. We review
+                your treatment history, explain the ketamine evaluation process, and discuss
+                whether in-clinic treatment may be appropriate for you.
               </p>
               <ButtonKetamine section="care">Start your assessment</ButtonKetamine>
             </article>
