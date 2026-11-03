@@ -43,6 +43,43 @@ const PrivateFollowUp = () => (
     </a>
   </p>
 );
+const ClosingSection = () => (
+  <div className="ketamine-page">
+    <section
+      className="ketamine-section ketamine-closing"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
+      <div className="ketamine-container ketamine-split">
+        <div>
+          <p className="ketamine-eyebrow">Let’s talk about your next step</p>
+          <h2 id="contact-title">
+            Talk With Our Torrance
+            <br />
+            Ketamine Team
+          </h2>
+          <p>
+            Take the private assessment to explore ketamine care for mental health or pain.
+            You can request follow-up or call our team to discuss your next step.
+          </p>
+          <Actions
+            section="closing"
+            light
+            assessmentLabel="Explore your next step"
+            assessmentAriaLabel="Explore your next step with the private assessment"
+          />
+          <p className="ketamine-note">Private assessment · In-clinic care in Torrance</p>
+          <PrivateFollowUp />
+        </div>
+        <StaticImage
+          src="../images/change-your-life-today-v3.png"
+          alt="Three people smiling"
+          className="ketamine-closing-image"
+        />
+      </div>
+    </section>
+  </div>
+);
 const faqs = [
   [
     'What will the assessment tell me?',
@@ -74,7 +111,7 @@ const faqs = [
   ],
 ];
 const IndexPage = () => (
-  <Layout2>
+  <Layout2 afterLocations={<ClosingSection />}>
     <PageMetadata />
     <div className="ketamine-page" id="top">
       <section className="ketamine-hero" aria-labelledby="hero-title">
@@ -263,39 +300,6 @@ const IndexPage = () => (
               </details>
             ))}
           </div>
-        </div>
-      </section>
-      <section
-        className="ketamine-section ketamine-closing"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div className="ketamine-container ketamine-split">
-          <div>
-            <p className="ketamine-eyebrow">Let’s talk about your next step</p>
-            <h2 id="contact-title">
-              Talk With Our Torrance
-              <br />
-              Ketamine Team
-            </h2>
-            <p>
-              Take the private assessment to explore ketamine care for mental health or pain.
-              You can request follow-up or call our team to discuss your next step.
-            </p>
-            <Actions
-              section="closing"
-              light
-              assessmentLabel="Explore your next step"
-              assessmentAriaLabel="Explore your next step with the private assessment"
-            />
-            <p className="ketamine-note">Private assessment · In-clinic care in Torrance</p>
-            <PrivateFollowUp />
-          </div>
-          <StaticImage
-            src="../images/change-your-life-today-v3.png"
-            alt="Three people smiling"
-            className="ketamine-closing-image"
-          />
         </div>
       </section>
       <nav className="ketamine-mobile-actions" aria-label="Contact our ketamine team">
