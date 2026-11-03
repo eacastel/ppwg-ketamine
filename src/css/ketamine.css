@@ -522,7 +522,7 @@ html {
 }
 .ketamine-closing {
   --ketamine-focus: #fff;
-  background: linear-gradient(110deg, #215cbe, #107d89);
+  background: var(--ketamine-blue);
   color: white;
 }
 .ketamine-closing h2,
