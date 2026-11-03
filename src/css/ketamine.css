@@ -1135,3 +1135,8 @@ html {
     gap: 2px;
   }
 }
+
+.ketamine-review-track .ketamine-review-stars {
+  color: #f5a623;
+  font-size: 26px;
+}
