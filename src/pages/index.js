@@ -82,8 +82,10 @@ const IndexPage = () => (
             <p className="ketamine-eyebrow">Pacific Pain & Wellness Group · Torrance, CA</p>
             <h1 id="hero-title">Ketamine Infusion Therapy in Torrance</h1>
             <p className="ketamine-lead">
-              Physician-led care for mental health and chronic pain, serving the South Bay,
-              Long Beach and Greater Los Angeles.
+              Physician-led care for mental health and chronic pain.
+            </p>
+            <p className="ketamine-service-area">
+              Serving the South Bay, Long Beach and Greater Los Angeles.
             </p>
             <div className="ketamine-clinician">
               <StaticImage
@@ -105,27 +107,59 @@ const IndexPage = () => (
               5 short questions. Private. See your next step before sharing contact details.
             </p>
             <PrivateFollowUp />
-            <a href="#pricing" className="ketamine-price-summary">
-              $650 per session <span>· Five-session minimum: $3,250</span>
-              <small>Self-pay treatment · View pricing details →</small>
-            </a>
-            <p className="ketamine-reassurance">
-              No payment or treatment commitment is required to request follow-up.
-            </p>
-            <nav className="ketamine-interest-links" aria-label="Explore ketamine care">
-              <a href="#ketamine-for-mental-health">Ketamine for mental health</a>
-              <a href="#ketamine-for-pain">Ketamine for chronic pain</a>
-            </nav>
           </div>
         </div>
-        <div className="ketamine-hero-mobile">
-          <StaticImage
-            src="../images/hero-banner-mobile.png"
-            alt="Woman relaxing at home"
-            loading="eager"
-          />
+      </section>
+      <section className="ketamine-reviews" id="testimonials" aria-labelledby="testimonial-title">
+        <div className="ketamine-container">
+          <div className="ketamine-review-heading">
+            <div>
+              <p className="ketamine-eyebrow">The patient experience</p>
+              <h2 id="testimonial-title">Care that starts with listening</h2>
+            </div>
+            <a
+              href="https://www.google.com/maps/place/Pacific+Pain+%26+Wellness+Group/@33.815136,-118.3277559,17z/data=!3m1!5s0x80dd4ad8338045dd:0x6737e1241900dfac!4m8!3m7!1s0x80dd4aebf1a96c6d:0x4144c738391591e1!8m2!3d33.815136!4d-118.3277559!9m1!1b1!16s%2Fg%2F1pp2x6nh9?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ketamine-google-reviews-link"
+            >
+              Read reviews on Google →
+            </a>
+          </div>
+          <div className="ketamine-review-grid">
+            <figure className="ketamine-review">
+              <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+              <blockquote>“I felt heard and respected throughout the visit.”</blockquote>
+              <figcaption>
+                <strong>Ali Adabzadeh</strong>
+                <span>Google review</span>
+              </figcaption>
+            </figure>
+            <figure className="ketamine-review">
+              <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+              <blockquote>“He listened attentively to my concerns and provided feedback.”</blockquote>
+              <figcaption>
+                <strong>Becquie Venus</strong>
+                <span>Google review</span>
+              </figcaption>
+            </figure>
+          </div>
+          <p className="ketamine-review-context">
+            Selected five-star Google reviews about the practice’s care experience.
+          </p>
         </div>
       </section>
+      <div className="ketamine-pricing-summary-band">
+        <div className="ketamine-container">
+          <a href="#pricing" className="ketamine-price-summary">
+            $650 per session <span>· Five-session minimum: $3,250</span>
+            <small>Self-pay · Not covered by insurance · View pricing details →</small>
+          </a>
+          <p className="ketamine-reassurance">
+            No payment or treatment commitment is required to request follow-up.
+          </p>
+        </div>
+      </div>
       <div className="ketamine-trust-strip">
         <div className="ketamine-container">
           <span>Ketamine care since 2015</span>
@@ -147,6 +181,10 @@ const IndexPage = () => (
               pain-management expertise.
             </p>
           </div>
+          <nav className="ketamine-interest-links" aria-label="Explore ketamine care">
+            <a href="#ketamine-for-mental-health">Ketamine for mental health</a>
+            <a href="#ketamine-for-pain">Ketamine for chronic pain</a>
+          </nav>
           <div className="ketamine-care-grid">
             <article className="ketamine-care-card" id="ketamine-for-mental-health">
               <span className="ketamine-card-label">Mental-health treatment</span>
@@ -281,55 +319,6 @@ const IndexPage = () => (
             </p>
             <ButtonKetamine section="pricing">Start your private assessment</ButtonKetamine>
             <p className="ketamine-note">Taking the assessment does not commit you to treatment.</p>
-          </div>
-        </div>
-      </section>
-      <section
-        className="ketamine-section ketamine-soft"
-        id="testimonials"
-        aria-labelledby="testimonial-title"
-      >
-        <div className="ketamine-container">
-          <div className="ketamine-section-heading">
-            <p className="ketamine-eyebrow">The patient experience</p>
-            <h2 id="testimonial-title">What patients say about Pacific Pain & Wellness Group</h2>
-            <p>These reviews describe individual experiences at our practice.</p>
-          </div>
-          <div className="ketamine-review-grid">
-            <figure className="ketamine-review">
-              <blockquote>
-                “Everyone was helpful and attentive, from the front desk staff, to the nurse and the
-                PA. The appointment ran on time. My issue was addressed and I was scheduled for my
-                procedure the very next week. Office is clean and comfortable. I would highly
-                recommend the services of Pacific Pain & Wellness.”
-              </blockquote>
-              <figcaption>
-                <strong>Kery W.</strong>
-                <span>General practice experience</span>
-              </figcaption>
-            </figure>
-            <figure className="ketamine-review">
-              <blockquote>
-                “This is a very respectable and professional place the staff is is nice and
-                welcoming, I keep coming back because they make me feel comfortable with myself.”
-              </blockquote>
-              <figcaption>
-                <strong>Alice C.</strong>
-                <span>General practice experience</span>
-              </figcaption>
-            </figure>
-            <figure className="ketamine-review">
-              <blockquote>
-                “I loved my experience here. I came here with chronic pain & depression & received
-                TMS & ketamine therapy. Changed my life, for the BETTER . I came for treatments
-                every day (except weekends) for many weeks. I looked forward to each visit as I
-                continued to feel the positive effects of the treatments I received.”
-              </blockquote>
-              <figcaption>
-                <strong>Joshua B.</strong>
-                <span>Combined TMS and ketamine experience</span>
-              </figcaption>
-            </figure>
           </div>
         </div>
       </section>
