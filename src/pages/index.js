@@ -100,34 +100,8 @@ const IndexPage = () => (
           <span>Pain & mental-health expertise</span>
         </div>
       </div>
-      <section className="ketamine-section" id="ketamine-care" aria-label="Ketamine treatment options">
-        <div className="ketamine-container">
-          <div className="ketamine-care-grid">
-            <article className="ketamine-care-card" id="ketamine-for-mental-health">
-              <span className="ketamine-card-label">Mental-health treatment</span>
-              <h2>Ketamine for mental health</h2>
-              <p>
-                Get help understanding your ketamine treatment options for depression and other
-                mental-health concerns. Our team reviews your treatment history and explains
-                whether an in-clinic consultation is an appropriate next step.
-              </p>
-              <ButtonKetamine section="care">Take the assessment</ButtonKetamine>
-            </article>
-            <article className="ketamine-care-card" id="ketamine-for-pain">
-              <span className="ketamine-card-label">Pain treatment</span>
-              <h2>Ketamine for chronic pain</h2>
-              <p>
-                Get help with persistent pain from our Torrance pain-management team. We review
-                your treatment history, explain the ketamine evaluation process, and discuss
-                whether in-clinic treatment may be appropriate for you.
-              </p>
-              <ButtonKetamine section="care">Start your assessment</ButtonKetamine>
-            </article>
-          </div>
-        </div>
-      </section>
       <section
-        className="ketamine-section ketamine-soft"
+        className="ketamine-section ketamine-soft ketamine-approach"
         id="approach"
         aria-labelledby="approach-title"
       >
@@ -140,9 +114,7 @@ const IndexPage = () => (
           <div>
             <p className="ketamine-eyebrow">Experience that matters</p>
             <h2 id="approach-title">
-              Ketamine care with
-              <br />
-              Pacific Pain & Wellness Group
+              Ketamine care with Pacific Pain & Wellness Group
             </h2>
             <p>
               Our Torrance team has provided in-clinic ketamine care since 2015, bringing together
@@ -179,6 +151,32 @@ const IndexPage = () => (
                 <span>Ketamine treatment takes place in our Torrance clinical setting.</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section className="ketamine-section" id="ketamine-care" aria-label="Ketamine treatment options">
+        <div className="ketamine-container">
+          <div className="ketamine-care-grid">
+            <article className="ketamine-care-card" id="ketamine-for-mental-health">
+              <span className="ketamine-card-label">Mental-health treatment</span>
+              <h2>Ketamine for mental health</h2>
+              <p>
+                Get help understanding your ketamine treatment options for depression and other
+                mental-health concerns. Our team reviews your treatment history and explains
+                whether an in-clinic consultation is an appropriate next step.
+              </p>
+              <ButtonKetamine section="care">Take the assessment</ButtonKetamine>
+            </article>
+            <article className="ketamine-care-card" id="ketamine-for-pain">
+              <span className="ketamine-card-label">Pain treatment</span>
+              <h2>Ketamine for chronic pain</h2>
+              <p>
+                Get help with persistent pain from our Torrance pain-management team. We review
+                your treatment history, explain the ketamine evaluation process, and discuss
+                whether in-clinic treatment may be appropriate for you.
+              </p>
+              <ButtonKetamine section="care">Start your assessment</ButtonKetamine>
+            </article>
           </div>
         </div>
       </section>
