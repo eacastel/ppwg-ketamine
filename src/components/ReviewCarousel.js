@@ -115,7 +115,7 @@ const ReviewCarousel = () => {
               aria-roledescription="slide"
               aria-label={`Review ${index + 1} of ${reviews.length}`}
             >
-              <figcaption>
+              <figcaption className="ketamine-review-byline">
                 <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
                 <strong>{review.name}</strong>
                 <a href={review.url} target="_blank" rel="noopener noreferrer" aria-label={`Read ${review.name}'s review on Google`}>
