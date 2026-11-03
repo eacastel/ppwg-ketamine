@@ -46,8 +46,8 @@ const ReviewCarousel = () => {
     const next = {
       first,
       last: shown.length ? shown[shown.length - 1] : first,
-      atStart: track.scrollLeft <= 2,
-      atEnd: track.scrollLeft + track.clientWidth >= track.scrollWidth - 2,
+      atStart: cards[0].getBoundingClientRect().left >= bounds.left - 2,
+      atEnd: cards[cards.length - 1].getBoundingClientRect().right <= bounds.right + 2,
     };
     setVisible(previous =>
       Object.keys(next).every(key => previous[key] === next[key]) ? previous : next
