@@ -249,11 +249,11 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <section className="ketamine-section" id="faq" aria-labelledby="faq-title">
+      <section className="ketamine-section ketamine-faq-section" id="faq" aria-labelledby="faq-title">
         <div className="ketamine-container ketamine-faq-wrap">
           <div className="ketamine-section-heading">
-            <p className="ketamine-eyebrow">Your questions, answered</p>
-            <h2 id="faq-title">Your questions about ketamine care</h2>
+            <p className="ketamine-eyebrow">Common questions</p>
+            <h2 id="faq-title">What to know about ketamine treatment</h2>
           </div>
           <div className="ketamine-faq">
             {faqs.map(([question, answer]) => (

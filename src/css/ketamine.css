@@ -489,6 +489,24 @@ html {
 .ketamine-faq-wrap {
   max-width: 900px;
 }
+.ketamine-faq-section {
+  --ketamine-focus: #fff;
+  background: var(--ketamine-blue);
+  color: #fff;
+}
+.ketamine-page .ketamine-faq-section h2,
+.ketamine-faq-section summary {
+  color: #fff;
+}
+.ketamine-page .ketamine-faq-section p {
+  color: var(--ketamine-blue-soft);
+}
+.ketamine-faq-section .ketamine-faq details {
+  border-bottom-color: #ffffff40;
+}
+.ketamine-faq-section summary:hover {
+  color: var(--ketamine-blue-soft);
+}
 .ketamine-faq details {
   border-bottom: 1px solid var(--ketamine-line);
   padding: 20px 0;
