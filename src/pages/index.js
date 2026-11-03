@@ -131,18 +131,6 @@ const IndexPage = () => (
           </a>
         </div>
       </section>
-      <div className="ketamine-pricing-summary-band">
-        <div className="ketamine-container">
-          <a href="#pricing" className="ketamine-price-summary">
-            $650 per session <span>· Five-session minimum: $3,250</span>
-            <small>Self-pay · Not covered by insurance · View pricing details →</small>
-          </a>
-          <PrivateFollowUp />
-          <p className="ketamine-reassurance">
-            No payment or treatment commitment is required to request follow-up.
-          </p>
-        </div>
-      </div>
       <section className="ketamine-section" id="ketamine-care" aria-labelledby="care-title">
         <div className="ketamine-container">
           <div className="ketamine-section-heading">
