@@ -639,6 +639,7 @@ html {
     margin-top: 6px;
   }
   .ketamine-review-grid {
+    grid-template-columns: 1fr;
     gap: 12px;
   }
   .ketamine-review {
@@ -667,8 +668,7 @@ html {
   .ketamine-care-grid,
   .ketamine-split,
   .ketamine-pricing-grid,
-  .ketamine-step-grid,
-  .ketamine-review-grid {
+  .ketamine-step-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
