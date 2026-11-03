@@ -87,26 +87,7 @@ const IndexPage = () => (
             <p className="ketamine-service-area">
               Serving the South Bay, Long Beach and Greater Los Angeles.
             </p>
-            <div className="ketamine-clinician">
-              <StaticImage
-                src="../images/dr-kartik-ananth.jpg"
-                alt="Dr. Kartik Ananth"
-                width={96}
-                height={96}
-                loading="eager"
-                className="ketamine-clinician-photo"
-              />
-              <div>
-                <strong>Dr. Kartik Ananth, MD, MBA</strong>
-                <span>Board-certified in psychiatry and pain management</span>
-                <span>15+ years of physician experience with ketamine</span>
-              </div>
-            </div>
             <Actions section="hero" assessmentLabel="Take the private assessment" />
-            <p className="ketamine-note">
-              5 short questions. Private. See your next step before sharing contact details.
-            </p>
-            <PrivateFollowUp />
           </div>
         </div>
       </section>
@@ -155,6 +136,7 @@ const IndexPage = () => (
             $650 per session <span>· Five-session minimum: $3,250</span>
             <small>Self-pay · Not covered by insurance · View pricing details →</small>
           </a>
+          <PrivateFollowUp />
           <p className="ketamine-reassurance">
             No payment or treatment commitment is required to request follow-up.
           </p>
@@ -234,6 +216,21 @@ const IndexPage = () => (
               Our Torrance team has provided in-clinic ketamine care since 2015, bringing together
               expertise in pain management and mental health.
             </p>
+            <div className="ketamine-clinician">
+              <StaticImage
+                src="../images/dr-kartik-ananth.jpg"
+                alt="Dr. Kartik Ananth"
+                width={96}
+                height={96}
+                loading="lazy"
+                className="ketamine-clinician-photo"
+              />
+              <div>
+                <strong>Dr. Kartik Ananth, MD, MBA</strong>
+                <span>Board-certified in psychiatry and pain management</span>
+                <span>15+ years of physician experience with ketamine</span>
+              </div>
+            </div>
             <ul className="ketamine-proof-list">
               <li>
                 <strong>Physician-led care</strong>
