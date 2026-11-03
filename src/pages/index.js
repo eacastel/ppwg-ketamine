@@ -91,22 +91,15 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <section className="ketamine-reviews" id="testimonials" aria-labelledby="testimonial-title">
+      <div className="ketamine-trust-strip">
         <div className="ketamine-container">
-          <div className="ketamine-review-heading">
-            <div>
-              <p className="ketamine-eyebrow">The patient experience</p>
-              <h2 id="testimonial-title">Care that starts with listening</h2>
-            </div>
-            <a
-              href="https://www.google.com/maps/place/Pacific+Pain+%26+Wellness+Group/@33.815136,-118.3277559,17z/data=!3m1!5s0x80dd4ad8338045dd:0x6737e1241900dfac!4m8!3m7!1s0x80dd4aebf1a96c6d:0x4144c738391591e1!8m2!3d33.815136!4d-118.3277559!9m1!1b1!16s%2Fg%2F1pp2x6nh9?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ketamine-google-reviews-link"
-            >
-              Read reviews on Google →
-            </a>
-          </div>
+          <span>Ketamine care since 2015</span>
+          <span>Physician-led, in-clinic care</span>
+          <span>Pain & mental-health expertise</span>
+        </div>
+      </div>
+      <section className="ketamine-reviews" id="testimonials" aria-label="Google reviews">
+        <div className="ketamine-container">
           <div className="ketamine-review-grid">
             <figure className="ketamine-review">
               <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
@@ -128,6 +121,14 @@ const IndexPage = () => (
           <p className="ketamine-review-context">
             Selected five-star Google reviews about the practice’s care experience.
           </p>
+          <a
+            href="https://www.google.com/maps/place/Pacific+Pain+%26+Wellness+Group/@33.815136,-118.3277559,17z/data=!3m1!5s0x80dd4ad8338045dd:0x6737e1241900dfac!4m8!3m7!1s0x80dd4aebf1a96c6d:0x4144c738391591e1!8m2!3d33.815136!4d-118.3277559!9m1!1b1!16s%2Fg%2F1pp2x6nh9?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ketamine-google-reviews-link"
+          >
+            Read reviews on Google →
+          </a>
         </div>
       </section>
       <div className="ketamine-pricing-summary-band">
@@ -140,13 +141,6 @@ const IndexPage = () => (
           <p className="ketamine-reassurance">
             No payment or treatment commitment is required to request follow-up.
           </p>
-        </div>
-      </div>
-      <div className="ketamine-trust-strip">
-        <div className="ketamine-container">
-          <span>Ketamine care since 2015</span>
-          <span>Physician-led, in-clinic care</span>
-          <span>Pain & mental-health expertise</span>
         </div>
       </div>
       <section className="ketamine-section" id="ketamine-care" aria-labelledby="care-title">
