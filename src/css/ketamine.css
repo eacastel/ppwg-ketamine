@@ -194,7 +194,7 @@ html {
 }
 .ketamine-hero-copy {
   max-width: 650px;
-  padding: 68px 0 54px;
+  padding: 40px 0 32px;
 }
 .ketamine-hero-copy > p:not(.ketamine-eyebrow) {
   max-width: 555px;
@@ -203,13 +203,21 @@ html {
   font-size: 23px;
   line-height: 1.5;
   color: var(--ketamine-ink);
+  margin-bottom: 8px;
+}
+.ketamine-page .ketamine-service-area {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.ketamine-hero .ketamine-actions {
+  margin-top: 20px;
 }
 .ketamine-clinician {
   display: flex;
   align-items: center;
   gap: 16px;
   max-width: 555px;
-  margin: 24px 0;
+  margin: 20px 0;
 }
 .ketamine-clinician-photo {
   flex: 0 0 96px;
@@ -241,14 +249,17 @@ html {
   line-height: 1.6;
   margin: 12px 0 0;
 }
+.ketamine-pricing-summary-band {
+  padding: 22px 0;
+  border-block: 1px solid var(--ketamine-line);
+  background: var(--ketamine-blue-soft);
+  text-align: center;
+}
 .ketamine-price-summary {
-  display: block;
+  display: inline-block;
   color: var(--ketamine-ink);
-  border-top: 1px solid #bdcfde;
-  margin-top: 26px;
-  padding-top: 19px;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 600;
 }
 .ketamine-price-summary:hover {
   color: var(--ketamine-blue);
@@ -263,7 +274,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 0 22px;
-  margin-top: 18px;
+  margin: -18px 0 24px;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -277,9 +289,6 @@ html {
 }
 .ketamine-interest-links a:hover {
   color: var(--ketamine-blue-dark);
-}
-.ketamine-hero-mobile {
-  display: none;
 }
 .ketamine-trust-strip {
   background: linear-gradient(100deg, #215cbe, #107d89);
@@ -354,8 +363,7 @@ html {
 .ketamine-process {
   background: linear-gradient(120deg, var(--ketamine-blue-soft), #d8eff2);
 }
-.ketamine-step-grid,
-.ketamine-review-grid {
+.ketamine-step-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -405,30 +413,78 @@ html {
   font-size: 24px;
   color: var(--ketamine-ink);
 }
+.ketamine-reviews {
+  padding: 32px 0 24px;
+  background: #fff;
+}
+.ketamine-review-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-bottom: 20px;
+}
+.ketamine-review-heading .ketamine-eyebrow {
+  margin-bottom: 8px;
+}
+.ketamine-page .ketamine-review-heading h2 {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  margin: 0;
+}
+.ketamine-google-reviews-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  color: var(--ketamine-blue-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.ketamine-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
 .ketamine-review {
   margin: 0;
-  padding: 28px;
+  padding: 20px 24px;
   border: 1px solid var(--ketamine-line);
-  border-radius: 20px;
-  background: white;
+  border-radius: 16px;
+  background: #f8fbfd;
   display: flex;
   flex-direction: column;
 }
+.ketamine-review-stars {
+  color: #966000;
+  letter-spacing: 0.12em;
+  font-size: 18px;
+  line-height: 1.3;
+}
 .ketamine-review blockquote {
-  font-size: 15px;
-  color: var(--ketamine-muted);
-  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ketamine-ink);
+  margin: 10px 0 16px;
 }
 .ketamine-review figcaption {
   margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 12px;
+  align-items: baseline;
+  font-size: 14px;
 }
-.ketamine-review figcaption strong,
-.ketamine-review figcaption span {
-  display: block;
+.ketamine-review figcaption strong {
+  font-weight: 600;
 }
 .ketamine-review figcaption span {
   font-size: 12px;
   color: var(--ketamine-muted);
+}
+.ketamine-page .ketamine-review-context {
+  font-size: 12px;
+  margin: 14px 0 0;
 }
 .ketamine-faq-wrap {
   max-width: 900px;
@@ -569,21 +625,31 @@ html {
     background: #f0f7fb;
   }
   .ketamine-hero-copy {
-    padding: 38px 0 30px;
+    padding: 24px 0;
     max-width: none;
   }
   .ketamine-page .ketamine-lead {
     font-size: 20px;
   }
-  .ketamine-hero-mobile {
+  .ketamine-review-heading {
     display: block;
+    margin-bottom: 14px;
   }
-  .ketamine-hero-mobile .gatsby-image-wrapper {
+  .ketamine-google-reviews-link {
+    margin-top: 6px;
+  }
+  .ketamine-review-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .ketamine-review {
+    padding: 18px 20px;
+  }
+  .ketamine-interest-links {
+    justify-content: flex-start;
+  }
+  .ketamine-price-summary span {
     display: block;
-    max-height: 260px;
-  }
-  .ketamine-hero-mobile img {
-    object-position: center 35%;
   }
   .ketamine-hero .ketamine-actions {
     display: grid;
@@ -602,8 +668,7 @@ html {
   .ketamine-care-grid,
   .ketamine-split,
   .ketamine-pricing-grid,
-  .ketamine-step-grid,
-  .ketamine-review-grid {
+  .ketamine-step-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
