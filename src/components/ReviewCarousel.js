@@ -115,19 +115,19 @@ const ReviewCarousel = () => {
               aria-roledescription="slide"
               aria-label={`Review ${index + 1} of ${reviews.length}`}
             >
-              <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
-              <blockquote>“{review.quote}”</blockquote>
               <figcaption>
+                <span className="ketamine-review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
                 <strong>{review.name}</strong>
                 <a href={review.url} target="_blank" rel="noopener noreferrer" aria-label={`Read ${review.name}'s review on Google`}>
-                  Google review ↗
+                  Google ↗
                 </a>
               </figcaption>
+              <blockquote>“{review.quote}”</blockquote>
             </figure>
           ))}
         </div>
         <div className="ketamine-review-controls">
-          <p className="ketamine-review-context">Selected five-star reviews about general practice care.</p>
+          <p className="ketamine-review-context">Google reviews · General practice care</p>
           <div className="ketamine-review-buttons">
             <button type="button" className="ketamine-review-navigation" aria-label="Previous reviews" aria-controls="ketamine-review-track" disabled={visible.atStart} onClick={() => move(-1)}>
               <span aria-hidden="true">←</span>
