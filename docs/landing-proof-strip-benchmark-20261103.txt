@@ -1,0 +1,54 @@
+PPWG landing-layout benchmark and compact proof strip — 2026-11-03
+
+Scope: public clinic acquisition-entry pages, inspected at 1440 x 1000.
+Their paid-campaign destinations and conversion results are not known.
+Observations support layout choices, not claims of conversion superiority.
+
+Benchmarks:
+1. Ketamine Clinics Los Angeles — https://ketamineclinics.com/
+   Large visual hero, short headline, prominent consultation action. Public
+   page content introduces the clinic and its experience before treatment
+   choices. Rendered hero consult button observed near y=827 in this viewport.
+2. NeuroRelief — https://neuroreliefketamine.com/
+   Large image-led hero with call/consultation actions. Google review widget
+   precedes a detailed clinic/program explanation. Observed review widget
+   height approximately 278px at y=1275; this is a full testimonial widget,
+   not the compact strip requested for PPWG.
+3. Nushama — https://nushama.com/
+   Image/copy hero with a consultation action, followed early by the medical
+   team. Testimonials occur later. Observed testimonial widget height ~232px.
+   Clinic environment and clinician identity supply credibility near the top.
+
+Only structure was benchmarked. Competitor medical efficacy, safety, insurance
+and outcome claims were not verified or copied. Some animated headings were
+blank before scrolling; exact downstream pixel positions are approximate.
+Trackers and submissions were blocked during browser inspection.
+
+PPWG baseline, measured before this change:
+- Desktop 1440px: hero 434px; reviews 336px; clinic/experience section 885px.
+- Mobile 390px: hero 530px; reviews 372px; clinic/experience section 1252px.
+
+Implementation:
+- Desktop hero at >=1024px gets a 540px minimum height; its copy remains short.
+  Smaller-screen hero sizing is retained.
+- Four verified reviews and their exact original Google links are retained.
+  Stars/name/source share a line; large card surfaces and excess padding are
+  removed; manual carousel controls share the strip. No text is line-clamped.
+- Gold 26px stars, all four excerpts, swipe, keyboard, reduced motion and
+  accessible status updates are preserved. No autoplay.
+- Final order: hero -> compact reviews -> blue trust banner -> clinic/
+  physician section -> two treatment cards -> process -> existing pricing.
+- Clinic section retains all clinical text and credentials; heading and spacing
+  are more compact. The decorative lifestyle image is hidden on mobile, while
+  the physician headshot remains visible. No new clinical or outcome claim.
+- No ad, budget, GA4/GTM, private form or private-handoff changes.
+
+Interpretation:
+Showing the clinic and physician before asking visitors to choose a treatment
+path is a reasonable confidence-building sequence. Keeping that section concise
+and retaining direct header navigation limits the extra distance to the options.
+A conversion or Quality Score improvement cannot be claimed from layout alone.
+
+Local evidence:
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-proof-strip-20261103/benchmark-layouts.json
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-proof-strip-20261103/
