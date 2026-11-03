@@ -1,0 +1,31 @@
+Landing review sources and layout — 2026-11-03
+
+Public landing: https://ketamine.pacificpaingroup.com/
+Change: compact hero; Google reviews immediately below it; pricing summary and private follow-up below reviews. Dr. Kartik Ananth's existing photo and credentials moved to the experience section; no new credential claims.
+
+Review verification:
+- Public, signed-out Google Maps profile for Pacific Pain & Wellness Group, Torrance.
+- Source: https://www.google.com/maps/place/Pacific+Pain+%26+Wellness+Group/@33.815136,-118.3277559,17z/data=!3m1!5s0x80dd4ad8338045dd:0x6737e1241900dfac!4m8!3m7!1s0x80dd4aebf1a96c6d:0x4144c738391591e1!8m2!3d33.815136!4d-118.3277559!9m1!1b1!16s%2Fg%2F1pp2x6nh9?hl=en
+- Ali Adabzadeh: observed aria-label "5 stars"; excerpt: "I felt heard and respected throughout the visit."
+  Review ID: Ci9DQUlRQUNvZENodHljRjlvT2kxdFYyNXNObVZNVFMwNFlrcFpNbTgxWDJoVldFRRAB
+- Becquie Venus: observed aria-label "5 stars"; excerpt: "He listened attentively to my concerns and provided feedback."
+  Review ID: Ci9DQUlRQUNvZENodHljRjlvT25CZlRFMUZNMHhRWkV0UWEwMTRlRGxKVTFKeE1sRRAB
+- Both excerpts are verbatim public reviews about general care. Neither is represented as a ketamine treatment result.
+- Stars describe each selected review. The profile's aggregate rating was 4.7 from 322 reviews at verification, not 5.0. No aggregate rating/count is hardcoded on the landing.
+- Public review search for ketamine returned no matches within Google's limited signed-out view. This does not establish that no such reviews exist.
+- The previous Joshua B. combined-TMS-and-ketamine testimonial lacked a verifiable original Google review and rating in the available sources. It is preserved in Git history rather than republished as a five-star Google review.
+
+Local verification evidence:
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-reviews-20261103/google-review-cards.json
+ /home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/landing-reviews-20261103/google-maps-initial.json
+
+Measurement:
+Existing assessment/call selectors and labels retained. Both private follow-up links retain no-referrer protection and unparameterized intake destinations. The former hero follow-up link is relocated below reviews/pricing. No GA4/GTM/Ads/private-form changes.
+
+Quality Score rationale:
+Google identifies expected CTR, ad relevance and landing-page experience as the diagnostic's components. No documented direct benefit from a headshot's hero placement or more hero copy. This layout focuses on clarity; patient-acquisition uplift and score changes must be measured, not assumed.
+https://support.google.com/google-ads/answer/6167118?hl=en
+https://support.google.com/google-ads/answer/14086?hl=en
+
+Rollback:
+Revert this PR's merge via a new reviewed commit; do not deploy the stale local checkout.
