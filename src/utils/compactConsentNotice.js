@@ -20,6 +20,7 @@ export function compactConsentNotice() {
     details.className = 'ppwg-consent-details';
     const summary = document.createElement('summary');
     summary.textContent = 'Cookie details and policy';
+    summary.tabIndex = 0;
     // CookieYes handles keyboard events globally. Keep this native disclosure
     // operable without forwarding its Enter/Space keys to the consent controls.
     summary.addEventListener('keydown', (event) => {
@@ -27,6 +28,12 @@ export function compactConsentNotice() {
         event.preventDefault();
         event.stopPropagation();
         details.open = !details.open;
+      }
+    });
+    summary.addEventListener('keyup', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        event.stopPropagation();
       }
     });
     details.appendChild(summary);
