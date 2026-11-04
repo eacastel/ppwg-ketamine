@@ -15,11 +15,20 @@ export function compactConsentNotice() {
     if (!description.textContent.includes('We use essential technologies')) return false;
     const brief = document.createElement('p');
     brief.className = 'ppwg-consent-brief';
-    brief.textContent = 'Essential cookies keep this site working. With permission, analytics and advertising technologies measure visits and campaigns. You can change your choices anytime.';
+    brief.textContent = 'Essential cookies keep this site working. Optional analytics and advertising technologies measure visits and campaigns, with your permission.';
     details = document.createElement('details');
     details.className = 'ppwg-consent-details';
     const summary = document.createElement('summary');
     summary.textContent = 'Cookie details and policy';
+    // CookieYes handles keyboard events globally. Keep this native disclosure
+    // operable without forwarding its Enter/Space keys to the consent controls.
+    summary.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        event.stopPropagation();
+        details.open = !details.open;
+      }
+    });
     details.appendChild(summary);
     // Preserve the complete original disclosure and its policy link.
     while (description.firstChild) details.appendChild(description.firstChild);

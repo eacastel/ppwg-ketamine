@@ -1192,7 +1192,7 @@ html {
     bottom: 0 !important;
   }
   body:has(.ketamine-hero) .cky-consent-container .cky-consent-bar {
-    padding: 14px 16px 8px !important;
+    padding: 10px 16px 8px !important;
     max-height: 75dvh;
     overflow-y: auto;
     border-radius: 10px 10px 0 0 !important;
