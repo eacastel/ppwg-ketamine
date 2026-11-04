@@ -35,6 +35,9 @@ const PrivateFollowUp = () => (
     Prefer to speak with our team first?{' '}
     <a
       href="https://intake.pacificpaingroup.com/private-consultation-request"
+      data-service="ketamine"
+      data-cta="followup-cta"
+      data-section="closing"
       rel="noreferrer"
       referrerPolicy="no-referrer"
       style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '0.2em' }}
@@ -336,3 +339,4 @@ const PageMetadata = () => (
   </Helmet>
 );
 export default IndexPage;
+
