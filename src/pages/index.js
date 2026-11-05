@@ -30,19 +30,19 @@ const Actions = ({
     </a>
   </div>
 );
-const PrivateFollowUp = () => (
+const PrivateFollowUp = ({ section = 'closing' }) => (
   <p className="ketamine-note">
-    Prefer to speak with our team first?{' '}
+    Prefer to talk first?{' '}
     <a
       href="https://intake.pacificpaingroup.com/private-consultation-request"
       data-service="ketamine"
       data-cta="followup-cta"
-      data-section="closing"
+      data-section={section}
       rel="noreferrer"
       referrerPolicy="no-referrer"
       style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '0.2em' }}
     >
-      Request a private follow-up
+      Request a call from our team
     </a>
   </p>
 );
@@ -129,6 +129,7 @@ const IndexPage = () => (
               Serving the South Bay, Long Beach and Greater Los Angeles.
             </p>
             <Actions section="hero" assessmentLabel="Take the private assessment" />
+            <PrivateFollowUp section="hero" />
           </div>
         </div>
       </section>
