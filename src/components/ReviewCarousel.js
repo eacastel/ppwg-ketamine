@@ -29,6 +29,7 @@ const reviews = [
 
 const ReviewCarousel = () => {
   const trackRef = useRef(null);
+  const swipeRef = useRef(null);
   const [visible, setVisible] = useState({ first: 0, last: 1, atStart: true, atEnd: false });
 
   const syncPosition = () => {
@@ -68,17 +69,49 @@ const ReviewCarousel = () => {
 
   const move = direction => {
     const track = trackRef.current;
+    if (!track || !track.firstElementChild) return;
     const gap = parseFloat(window.getComputedStyle(track).columnGap) || 0;
     const step = track.firstElementChild.getBoundingClientRect().width + gap;
+    const end = Math.max(0, track.scrollWidth - track.clientWidth);
     const left = direction === 'start'
       ? 0
       : direction === 'end'
-        ? track.scrollWidth
-        : track.scrollLeft + direction * step;
+        ? end
+        : direction > 0 && track.scrollLeft >= end - 2
+          ? 0
+          : direction < 0 && track.scrollLeft <= 2
+            ? end
+            : Math.max(0, Math.min(end, track.scrollLeft + direction * step));
     track.scrollTo({
       left,
       behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
     });
+  };
+
+  const onTouchStart = event => {
+    if (event.touches.length !== 1) {
+      swipeRef.current = null;
+      return;
+    }
+    const track = trackRef.current;
+    const touch = event.touches[0];
+    swipeRef.current = {
+      x: touch.clientX,
+      y: touch.clientY,
+      atStart: track.scrollLeft <= 2,
+      atEnd: track.scrollLeft >= track.scrollWidth - track.clientWidth - 2,
+    };
+  };
+
+  const onTouchEnd = event => {
+    const start = swipeRef.current;
+    swipeRef.current = null;
+    if (!start || event.touches.length || event.changedTouches.length !== 1) return;
+    const touch = event.changedTouches[0];
+    const distance = touch.clientX - start.x;
+    if (Math.abs(distance) < 40 || Math.abs(distance) <= Math.abs(touch.clientY - start.y)) return;
+    if (distance < 0 && start.atEnd) move(1);
+    if (distance > 0 && start.atStart) move(-1);
   };
 
   const onKeyDown = event => {
@@ -106,6 +139,9 @@ const ReviewCarousel = () => {
           aria-label="Patient reviews. Use the arrow keys or swipe to browse."
           onScroll={syncPosition}
           onKeyDown={onKeyDown}
+          onTouchStart={onTouchStart}
+          onTouchEnd={onTouchEnd}
+          onTouchCancel={() => { swipeRef.current = null; }}
         >
           {reviews.map((review, index) => (
             <figure
@@ -129,13 +165,13 @@ const ReviewCarousel = () => {
         <div className="ketamine-review-controls">
           <p className="ketamine-review-context">Google reviews · General practice care</p>
           <div className="ketamine-review-buttons">
-            <button type="button" className="ketamine-review-navigation" aria-label="Previous reviews" aria-controls="ketamine-review-track" disabled={visible.atStart} onClick={() => move(-1)}>
+            <button type="button" className="ketamine-review-navigation" aria-label="Previous reviews" aria-controls="ketamine-review-track" onClick={() => move(-1)}>
               <span aria-hidden="true">←</span>
             </button>
             <span className="ketamine-review-status" role="status" aria-live="polite" aria-atomic="true">
               {visible.first + 1}{visible.last > visible.first ? `–${visible.last + 1}` : ''} of {reviews.length} reviews
             </span>
-            <button type="button" className="ketamine-review-navigation" aria-label="Next reviews" aria-controls="ketamine-review-track" disabled={visible.atEnd} onClick={() => move(1)}>
+            <button type="button" className="ketamine-review-navigation" aria-label="Next reviews" aria-controls="ketamine-review-track" onClick={() => move(1)}>
               <span aria-hidden="true">→</span>
             </button>
           </div>
