@@ -40,6 +40,7 @@ export const KetamineLocations = () => (
         >
           Call (310) 437-7399
         </a>
+        <p className="ketamine-office-hours">Monday–Friday, 8 a.m.–5 p.m. Pacific</p>
       </div>
       <div className="ketamine-location-grid">
         {locations.map((location) => {

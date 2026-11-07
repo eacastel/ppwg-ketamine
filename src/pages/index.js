@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Layout2 from '../components/layout/Layout2';
 import ButtonKetamine from '../components/ButtonKetamine';
 import ReviewCarousel from '../components/ReviewCarousel';
+import { CallOrCallback, PrivateFollowUp, useContactAvailability } from '../components/ContactAvailability';
 
 const Actions = ({
   section,
@@ -19,33 +20,28 @@ const Actions = ({
     >
       {assessmentLabel}
     </ButtonKetamine>
-    <a
-      href="tel:+13104377399"
+    <CallOrCallback
+      section={section}
       className={`ketamine-button ketamine-button--${light ? 'light-outline' : 'outline'}`}
-      data-service="ketamine"
-      data-cta="call-cta"
-      data-section={section}
-    >
-      Call (310) 437-7399
-    </a>
+    />
   </div>
 );
-const PrivateFollowUp = ({ section = 'closing' }) => (
-  <p className="ketamine-note">
-    Prefer to talk first?{' '}
-    <a
-      href="https://intake.pacificpaingroup.com/private-consultation-request"
-      data-service="ketamine"
-      data-cta="followup-cta"
-      data-section={section}
-      rel="noreferrer"
-      referrerPolicy="no-referrer"
-      style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '0.2em' }}
+const MobileContactActions = () => {
+  const { showCallback } = useContactAvailability();
+  return (
+    <nav
+      className={`ketamine-mobile-actions${showCallback ? ' ketamine-mobile-actions--callback' : ''}`}
+      aria-label="Contact our ketamine team"
     >
-      Request a call from our team
-    </a>
-  </p>
-);
+      <ButtonKetamine section="mobile-bar">Take the assessment</ButtonKetamine>
+      <CallOrCallback
+        section="mobile-bar"
+        className="ketamine-button ketamine-button--outline"
+        callLabel="Call"
+      />
+    </nav>
+  );
+};
 const ClosingSection = () => (
   <div className="ketamine-page">
     <section
@@ -306,19 +302,7 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <nav className="ketamine-mobile-actions" aria-label="Contact our ketamine team">
-        <ButtonKetamine section="mobile-bar">Take the assessment</ButtonKetamine>
-        <a
-          href="tel:+13104377399"
-          className="ketamine-button ketamine-button--outline"
-          data-service="ketamine"
-          data-cta="call-cta"
-          data-section="mobile-bar"
-          aria-label="Call our ketamine team at 310 437 7399"
-        >
-          Call
-        </a>
-      </nav>
+      <MobileContactActions />
     </div>
   </Layout2>
 );

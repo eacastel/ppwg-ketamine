@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import ButtonKetamine from '../ButtonKetamine';
+import { CallOrCallback } from '../ContactAvailability';
 const HeaderKetamine = () => (
   <header className="ketamine-header">
     <a className="ketamine-skip" href="#main-content">
@@ -28,15 +29,11 @@ const HeaderKetamine = () => (
       <ButtonKetamine section="header" className="ketamine-header-cta">
         Start the assessment
       </ButtonKetamine>
-      <a
-        href="tel:+13104377399"
+      <CallOrCallback
+        section="header"
         className="ketamine-header-call"
-        data-service="ketamine"
-        data-cta="call-cta"
-        data-section="header"
-      >
-        Call our team
-      </a>
+        callLabel="Call our team"
+      />
     </div>
   </header>
 );
