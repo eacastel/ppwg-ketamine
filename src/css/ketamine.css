@@ -721,6 +721,13 @@ html {
     padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
     box-shadow: 0 -4px 20px #152b4010;
   }
+  .ketamine-mobile-actions--callback {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .ketamine-header-call {
+    min-width: 0;
+    text-align: right;
+  }
   .ketamine-mobile-actions .ketamine-button {
     font-size: 13px;
     padding-inline: 10px;
