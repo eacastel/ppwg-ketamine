@@ -94,7 +94,7 @@ const faqs = [
   ],
   [
     'How much does ketamine treatment cost?',
-    'Ketamine treatment is $650 per session, with a five-session minimum totaling $3,250. Our team will explain the applicable treatment plan and confirm your total before you begin.',
+    'The first four ketamine infusions are $650 each. Additional infusions are $550 each. There is no fixed minimum number of sessions. Your treatment plan is personalized after your initial consultation.',
   ],
   [
     'Do you accept insurance for ketamine treatment?',
@@ -270,16 +270,16 @@ const IndexPage = () => (
               & Wellness Group is self-pay and is not covered by insurance.
             </p>
             <p>
-              Our team will explain the applicable treatment plan and confirm your total before you
-              begin.
+              There is no fixed minimum number of sessions. Your treatment plan is personalized
+              after your initial consultation.
             </p>
           </div>
           <div className="ketamine-price-card">
             <p className="ketamine-price">
-              <strong>$650</strong> per session
+              <strong>$650</strong> each for the first four infusions
             </p>
             <p className="ketamine-course">
-              Five-session minimum <strong>$3,250</strong>
+              <strong>$550</strong> for each additional infusion
             </p>
             <ButtonKetamine section="pricing">Start your private assessment</ButtonKetamine>
             <p className="ketamine-note">Taking the assessment does not commit you to treatment.</p>
