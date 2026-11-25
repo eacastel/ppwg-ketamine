@@ -1,8 +1,22 @@
 // gatsby-ssr.js
 import React from "react";
 
-export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
+export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
+    <link key="ppwg-consent-style" rel="stylesheet" href="/ppwg-public-consent-native.css" />,
+    <script key="ppwg-consent-native" src="/ppwg-public-consent-native.js" />,
+    <script
+      key="ppwg-consent-init"
+      dangerouslySetInnerHTML={{
+        __html: `(function(w){
+w['ga-disable-G-VK55BK4WPF']=true;
+if(w.ppwgNativeConsent)w.ppwgNativeConsent.install({loadCmp:true,
+measurementIds:['G-VK55BK4WPF'],isPublicPage:function(){
+return w.location.protocol==='https:'&&w.location.hostname==='ketamine.pacificpaingroup.com'&&w.location.pathname==='/';
+}});
+})(window);`,
+      }}
+    />,
     <script
       key="gtm-head"
       dangerouslySetInnerHTML={{
@@ -21,17 +35,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />,
   ]);
 
-  setPreBodyComponents([
-    <noscript key="gtm-noscript">
-      <iframe
-        title="GTM"
-        src="https://www.googletagmanager.com/ns.html?id=GTM-M55HVZQ3"
-        height="0"
-        width="0"
-        style={{ display: "none", visibility: "hidden" }}
-      />
-    </noscript>,
-  ]);
+  // No noscript tracking iframe: a visitor without JavaScript cannot choose
+  // optional analytics. The regular container retains its existing ID above.
 };
-
-

@@ -1,0 +1,30 @@
+html[data-ppwg-native-consent] .cky-consent-container {
+  left: 16px;
+  right: 16px;
+  bottom: 12px;
+  width: auto;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+html[data-ppwg-native-consent] .cky-consent-bar { padding: 18px 22px; }
+html[data-ppwg-native-consent] .cky-notice-btn-wrapper { display: flex; gap: 10px; }
+html[data-ppwg-native-consent] .cky-btn { min-height: 44px; font-family: inherit; }
+html[data-ppwg-native-consent] [data-cky-tag="accept-button"],
+html[data-ppwg-native-consent] [data-cky-tag="detail-accept-button"],
+html[data-ppwg-native-consent] [data-cky-tag="detail-save-button"] {
+  background: var(--ppwg-consent-accent, #006db8) !important;
+  border-color: var(--ppwg-consent-accent, #006db8) !important;
+  color: #fff !important;
+}
+html[data-ppwg-native-consent] [data-cky-tag="reject-button"],
+html[data-ppwg-native-consent] [data-cky-tag="settings-button"] {
+  background: #fff !important;
+  border-color: var(--ppwg-consent-accent, #006db8) !important;
+  color: var(--ppwg-consent-accent, #006db8) !important;
+}
+@media (max-width: 600px) {
+  html[data-ppwg-native-consent] .cky-consent-container { left: 10px; right: 10px; bottom: 10px; }
+  html[data-ppwg-native-consent] .cky-consent-bar { padding: 15px; }
+  html[data-ppwg-native-consent] .cky-notice-btn-wrapper { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  html[data-ppwg-native-consent] .cky-btn { margin: 0; padding: 9px 6px; font-size: 13px; overflow-wrap: normal; white-space: normal; }
+}

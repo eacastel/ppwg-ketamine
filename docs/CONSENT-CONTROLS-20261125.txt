@@ -1,0 +1,57 @@
+KETAMINE LANDING - NATIVE COOKIEYES CONTROLS
+25 November 2026 | Source candidate; paired Google publication tracked by Analytics
+
+Existing live landing: https://ketamine.pacificpaingroup.com/
+Source base: main 1ddeae7 (corrected pricing), not the older local main checkout.
+Existing GTM-M55HVZQ3 and GA4 G-VK55BK4WPF remain unchanged.
+
+This retains one CookieYes CMP and its cookieyes-consent domain cookie,
+consent identifier, actual choices and existing 365-day duration. It neither
+resets visitors on load nor creates a second consent record. Accept cookies
+uses the installed native category controls and native Save preferences button
+to commit analytics only. Other category choices remain independent, with
+stricter advertising privacy signals preserved. Advertising is not authorized
+by this analytics choice. Reject is available directly; native Preferences
+reflect actual saved values and the persistent native control reopens them.
+Visible labels and accessible names agree.
+
+The same public CookieYes provider script is loaded independently of Google.
+The source adapter sets GA4 disable synchronously, uses a withdrawal latch,
+clears applicable analytics cookies on denial, and announces only the explicit
+public-page consent boolean plus a query-free pathname. Existing native
+cookieyes_consent_update remains intact for independent functional consumers.
+No guessed or newly installed CookieYes SDK is used. DNT/GPC does not veto an
+actual ordinary-analytics opt-in; real script/network blocking is respected.
+
+Source activation requires exact HTTPS ketamine.pacificpaingroup.com and the
+root public path. Route updates recheck eligibility. No intake, assessment,
+upload, payment or private form page is instrumented by this change. The
+noscript GTM iframe was removed because JavaScript-disabled visitors cannot
+make an optional-analytics choice. Campaigns, budgets, IDs, public CTA tracking
+contracts and page content were not changed.
+
+Shared adapter owner: existing PPWG Website agent.
+Authoritative shared source:
+/home/ubuntu/production.pacificpaingroup.com/modules/custom/ppwg_site/js/public-consent-native.js
+/home/ubuntu/production.pacificpaingroup.com/modules/custom/ppwg_site/css/public-consent-native.css
+Copies in this landing: static/ppwg-public-consent-native.js and .css.
+JS SHA256: 75a92fe090a180ead683edfbda429d725dfd8318b9b3bb16c7e15585e40506cf
+CSS SHA256: 60863ac56f601f46d832e67f0ceaf9cfa0f3be6d25e9afe52fe6ddc0d64d7b2a
+
+Source QA: desktop1440, mobile390+GPC, mobile360+DNT. Passed fresh-choice
+requirement, analytics-only Accept, one-click Reject, unchanged cookie and
+expiry after reload, persistent reopen, saved-state Preferences, synchronous
+withdrawal/cookie cleanup, re-enable, and operation with all Google scripts
+blocked. Existing compact mobile disclosure retained. Every collector and
+non-GET/provider mutation was intercepted; no patient request, real call or
+analytics hit was delivered. Babel/JSX parsing and git diff --check passed.
+No dependency install or local build was run. The existing Netlify pipeline
+will validate the ordinary deployment after coordinated readiness.
+Evidence:
+/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/consent-20261125/candidate-verification.json
+
+Source-candidate tests are not a claim of live Google consent correctness.
+Analytics owns explicit GA4/GTM gates, denied Ads mapping, legacy CMP loader
+retirement after public sources are ready, and final live measurement QA.
+Use the existing 2026-11-25 portfolio consent audit for final release receipts;
+do not create a duplicate backlog. November Google Ads spending hold remains.
