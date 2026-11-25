@@ -3,14 +3,14 @@ import React from "react";
 
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
-    <link key="ppwg-consent-style" rel="stylesheet" href="/ppwg-public-consent-native.css" />,
-    <script key="ppwg-consent-native" src="/ppwg-public-consent-native.js" />,
+    <link key="ppwg-consent-style" rel="stylesheet" href="/ppwg-public-consent-first-party.css" />,
+    <script key="ppwg-consent-first-party" src="/ppwg-public-consent-first-party.js" />,
     <script
       key="ppwg-consent-init"
       dangerouslySetInnerHTML={{
         __html: `(function(w){
 w['ga-disable-G-VK55BK4WPF']=true;
-if(w.ppwgNativeConsent)w.ppwgNativeConsent.install({loadCmp:true,
+if(w.ppwgNativeConsent)w.ppwgNativeConsent.install({
 measurementIds:['G-VK55BK4WPF'],isPublicPage:function(){
 return w.location.protocol==='https:'&&!w.location.port&&w.location.hostname==='ketamine.pacificpaingroup.com'&&w.location.pathname==='/';
 }});
@@ -30,7 +30,6 @@ if(started||!state||state.completed!==true||state.analytics!==true||state.pendin
 if(w.location.protocol!=='https:'||w.location.port||w.location.hostname!=='ketamine.pacificpaingroup.com'||w.location.pathname!=='/')return;
 started=true;w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;
-j.setAttribute('data-cookieyes','cookieyes-analytics');
 j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;d.head.appendChild(j);
 }
 d.addEventListener('ppwg_consent_update',maybeStart);maybeStart();

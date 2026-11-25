@@ -1,87 +1,75 @@
-KETAMINE LANDING - NATIVE COOKIEYES CONTROLS
-25 November 2026 | Source candidate; paired Google publication tracked by Analytics
+KETAMINE LANDING - PREPARED FIRST-PARTY CONSENT CONTROLS
+25 November 2026 | UNPUBLISHED; matched Google/runtime acceptance pending
 
 Existing live landing: https://ketamine.pacificpaingroup.com/
-Source base: main 1ddeae7 (corrected pricing), not the older local main checkout.
-Existing GTM-M55HVZQ3 and GA4 G-VK55BK4WPF remain unchanged.
+Existing branch: marketing/ketamine-consent-20261125
+Base 1ddeae7 retains corrected pricing. Native fallback commits a7c6b0c and
+ df77388 remain in history; old static native assets/helper remain preserved.
+No campaign, budget, destination, public CTA, clinical or marketing changes.
 
-This retains one CookieYes CMP and its cookieyes-consent domain cookie,
-consent identifier, actual choices and existing 365-day duration. It neither
-resets visitors on load nor creates a second consent record. Accept cookies
-uses the installed native category controls and native Save preferences button
-to commit analytics only. Other category choices remain independent, with
-stricter advertising privacy signals preserved. Advertising is not authorized
-by this analytics choice. Reject is available directly; native Preferences
-reflect actual saved values and the persistent native control reopens them.
-Visible labels and accessible names agree.
+The identified controller is window.ppwgNativeConsent.controllerId ===
+'ppwg-first-party-v1'. It provides install/getState/preferences/reconcile,
+actual completed/analytics/pendingWithdrawal/functional category Booleans and
+adsAllowed:false. It neither creates window.cookieyes nor loads a vendor SDK.
+The actual cookieyes-consent cookie is read in place without writing, changing
+its ID or renewing expiry on load. Only explicit new choices use the existing
+.pacificpaingroup.com domain, Secure, SameSite=Strict, Path=/ and 365 days.
+Unknown fields and an existing consent identifier are retained on save.
+There is no invented historical/vendor consent log or server receipt.
 
-The same public CookieYes provider script is loaded independently of Google.
-The existing GTM bootstrap is deferred until a completed actual analytics grant
-with no withdrawal latch and an open GA-disable gate. It runs once per page on
-a saved grant or ppwg_consent_update. Fresh or rejected visits load no GTM/GA4.
-The exact public-page guard also rejects nonstandard ports.
-The source adapter sets GA4 disable synchronously, uses a withdrawal latch,
-clears applicable analytics cookies on denial, and announces only the explicit
-public-page consent boolean plus a query-free pathname. Existing native
-cookieyes_consent_update remains intact for independent functional consumers.
-No guessed or newly installed CookieYes SDK is used. DNT/GPC does not veto an
-actual ordinary-analytics opt-in; real script/network blocking is respected.
+Accept enables ordinary analytics while retaining independently selected
+functional/performance choices. Reject turns all optional categories off;
+Preferences exposes Functional and Analytics separately. Advertising remains
+held independently. DNT/GPC do not veto an explicit ordinary-analytics choice.
+Failed persistence closes measurement; withdrawal closes the GA-disable gate
+synchronously and clears applicable analytics cookies before notification.
+The existing cookieyes_consent_update event is retained for the real assistant
+consumer, alongside the typed ppwg_consent_update bridge. Functional assistant
+adaptation and public policy wording are prepared by the existing Website owner.
 
-Source activation requires exact HTTPS ketamine.pacificpaingroup.com and the
-root public path. Route updates recheck eligibility. No intake, assessment,
-upload, payment or private form page is instrumented by this change. The
-noscript GTM iframe was removed because JavaScript-disabled visitors cannot
-make an optional-analytics choice. Campaigns, budgets, IDs, public CTA tracking
-contracts and page content were not changed.
+The source loads its own shared first-party JS/CSS, independently of Google.
+GTM-M55HVZQ3 starts once per page only after a completed actual analytics grant,
+no pending withdrawal and ga-disable-G-VK55BK4WPF === false. Root HTTPS public
+host/path and port guards are unchanged. There is no noscript tracking iframe.
+Route updates recheck the same guard. The retired CookieYes-only presentation
+observer is no longer started; its helper and prior CSS are retained unused.
+New controls include the complete captured notice, policy link, three actions
+and a persistent Cookie settings opener. Real browser/network blocks apply.
+No intake, assessment, upload, payment or private form page gains tracking.
 
-Shared adapter owner: existing PPWG Website agent.
-Authoritative shared source:
-/home/ubuntu/production.pacificpaingroup.com/modules/custom/ppwg_site/js/public-consent-native.js
-/home/ubuntu/production.pacificpaingroup.com/modules/custom/ppwg_site/css/public-consent-native.css
-Copies in this landing: static/ppwg-public-consent-native.js and .css.
-JS SHA256: 75a92fe090a180ead683edfbda429d725dfd8318b9b3bb16c7e15585e40506cf
-CSS SHA256: 60863ac56f601f46d832e67f0ceaf9cfa0f3be6d25e9afe52fe6ddc0d64d7b2a
+Frozen shared source from the existing server Website owner:
+/home/ubuntu/production.pacificpaingroup.com/themes-ppwg/deployment/modules/custom/ppwg_site/js/public-consent-first-party.js
+/home/ubuntu/production.pacificpaingroup.com/themes-ppwg/deployment/modules/custom/ppwg_site/css/public-consent-first-party.css
+Landing copies: static/ppwg-public-consent-first-party.js and .css.
+JS SHA256: d71afd3d16eaedb9e2b803d73911018ec690b258fe99ea067b28ad3ac9fffec0
+CSS SHA256: e95a7d6b78c2bc406065052f8cfdbd24cff39039942030b41591d5b5454ee60a
 
-Source QA: desktop1440, mobile390+GPC, mobile360+DNT. Passed fresh-choice
-requirement, analytics-only Accept, one-click Reject, unchanged cookie and
-expiry after reload, persistent reopen, saved-state Preferences, synchronous
-withdrawal/cookie cleanup, re-enable, and operation with all Google scripts
-blocked. Existing compact mobile disclosure retained. Every collector and
-non-GET/provider mutation was intercepted; no patient request, real call or
-analytics hit was delivered. Babel/JSX parsing and git diff --check passed.
-No dependency install or local build was run. The existing Netlify pipeline
-will validate the ordinary deployment after coordinated readiness.
-Evidence:
-/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/consent-20261125/candidate-verification.json
+Website owner's blocked-SDK UI test: 12/12 across three prepared rendered hosts,
+covering three actions, unchanged legacy bytes/expiry, explicit 365-day saves,
+separate functional choice and synchronous withdrawal. This is not real matched
+Google runtime acceptance, a full Gatsby build or actual public-source proof.
+No dependency install, new worktree, local build or publication is part of this
+integration. The normal build remains a separate check at coordinated release.
 
-Source-candidate tests are not a claim of live Google consent correctness.
-Analytics owns explicit GA4/GTM gates, denied Ads mapping, legacy CMP loader
-retirement after public sources are ready, and final live measurement QA.
-Use the existing 2026-11-25 portfolio consent audit for final release receipts;
-do not create a duplicate backlog. November Google Ads spending hold remains.
+RELEASE HOLD
+Current live main-three Google version29/source/vendor remain unchanged.
+Candidate33 is unpublished and still has a legacy loader that would reinject
+CookieYes. Analytics must prepare matching retirement/guards using the exact
+owned marker above. A separate actual-SDK probe also caught an AW-11335981586
+page_view attempt after analytics-only acceptance on all three hosts. Attempts
+were intercepted locally; none delivered. This is a real unresolved blocker,
+not proof that a particular paused Ads tag fired. The first-party UI alone does
+not fix the shared Google destination. No release from UI/config-only PASS.
 
-DEFERRED BOOTSTRAP / EXTERNAL CMP CONFIGURATION READINESS
-The conditional bootstrap is prepared, not deployed. The current hosted
-CookieYes provider rule assigns googletagmanager.com to Advertisement, which
-blocks an analytics-only visitor's deferred GTM and potentially gtag script.
-The documented data-cookieyes="cookieyes-analytics" annotation alone did not
-resolve the existing broad provider rule. No ad permission was granted to work
-around it, and no browser/extension/network block was bypassed.
+After the matched Google candidate arrives, require exact-source real-SDK proof
+of analytics-only routing, canonical URLs, the five observed safe attribution
+triples/invalid clearing, denied Ads, persistence/withdrawal and private guards.
+Keep all collectors and provider/form/payment mutations blocked in QA. Normal
+source activation and actual public acceptance are separate coordinated steps.
+No new CookieYes dashboard login is needed for this prepared alternative if
+all its actual paired checks pass. Keep the native fallback pending that proof.
 
-An isolated response-interception harness simulated only changing that provider
-category from advertisement to analytics. With that proposed configuration, the
-full desktop/GPC/DNT mobile matrix passed: zero Google bootstrap before choice
-or after rejected reload; one bootstrap per granted page; no duplicate after
-withdrawal/re-enable; all previous choice/persistence/cookie-cleanup cases pass.
-All Google delivery, collectors and provider/form mutations remained blocked.
-The REMOTE COOKIEYES ACCOUNT WAS NOT CHANGED by this simulation.
-Actual hosted category correction and matched Google publication/live QA remain
-required before source activation. Native ad-cookie categories and strict
-Google Ads holds must remain separate and denied by analytics-only consent.
-
-Evidence of current configuration blocker:
-/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/consent-20261125/deferred-bootstrap-blocked-by-native-cmp.json
-Evidence of proposed configuration + full source matrix (simulation only):
-/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/consent-20261125/proposed-cmp-category-verification.json
-CookieYes documented script-category annotation:
-https://www.cookieyes.com/documentation/implement-prior-consent-using-cookieyes/
+Detailed contract:
+/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/handoffs/MAIN3-FIRST-PARTY-CONSENT-SEAM-20261125.txt
+Main3 coordination:
+/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/handoffs/PPWG-MAIN3-CONSENT-CUTOVER-20261125.txt
