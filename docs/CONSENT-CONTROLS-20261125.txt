@@ -16,6 +16,10 @@ reflect actual saved values and the persistent native control reopens them.
 Visible labels and accessible names agree.
 
 The same public CookieYes provider script is loaded independently of Google.
+The existing GTM bootstrap is deferred until a completed actual analytics grant
+with no withdrawal latch and an open GA-disable gate. It runs once per page on
+a saved grant or ppwg_consent_update. Fresh or rejected visits load no GTM/GA4.
+The exact public-page guard also rejects nonstandard ports.
 The source adapter sets GA4 disable synchronously, uses a withdrawal latch,
 clears applicable analytics cookies on denial, and announces only the explicit
 public-page consent boolean plus a query-free pathname. Existing native
@@ -55,3 +59,29 @@ Analytics owns explicit GA4/GTM gates, denied Ads mapping, legacy CMP loader
 retirement after public sources are ready, and final live measurement QA.
 Use the existing 2026-11-25 portfolio consent audit for final release receipts;
 do not create a duplicate backlog. November Google Ads spending hold remains.
+
+DEFERRED BOOTSTRAP / EXTERNAL CMP CONFIGURATION READINESS
+The conditional bootstrap is prepared, not deployed. The current hosted
+CookieYes provider rule assigns googletagmanager.com to Advertisement, which
+blocks an analytics-only visitor's deferred GTM and potentially gtag script.
+The documented data-cookieyes="cookieyes-analytics" annotation alone did not
+resolve the existing broad provider rule. No ad permission was granted to work
+around it, and no browser/extension/network block was bypassed.
+
+An isolated response-interception harness simulated only changing that provider
+category from advertisement to analytics. With that proposed configuration, the
+full desktop/GPC/DNT mobile matrix passed: zero Google bootstrap before choice
+or after rejected reload; one bootstrap per granted page; no duplicate after
+withdrawal/re-enable; all previous choice/persistence/cookie-cleanup cases pass.
+All Google delivery, collectors and provider/form mutations remained blocked.
+The REMOTE COOKIEYES ACCOUNT WAS NOT CHANGED by this simulation.
+Actual hosted category correction and matched Google publication/live QA remain
+required before source activation. Native ad-cookie categories and strict
+Google Ads holds must remain separate and denied by analytics-only consent.
+
+Evidence of current configuration blocker:
+/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/consent-20261125/deferred-bootstrap-blocked-by-native-cmp.json
+Evidence of proposed configuration + full source matrix (simulation only):
+/home/eacastel/Avanti/clients/PPWG/marketing-dashboard/artifacts/consent-20261125/proposed-cmp-category-verification.json
+CookieYes documented script-category annotation:
+https://www.cookieyes.com/documentation/implement-prior-consent-using-cookieyes/
